@@ -1,0 +1,29 @@
+/* first */
+h1 {
+    color: aqua;
+}
+body {
+    background: #0c1a29;
+}
+
+
+/* this type of comment is for classes */
+.thisclass {
+    color:  green;
+}
+/* this type of syntax is for id */
+#id{
+    
+}
+
+
+/* this is for the entire page*/
+*{
+ 
+}
+
+/* this takes both */
+
+h3 + ul{
+
+}
