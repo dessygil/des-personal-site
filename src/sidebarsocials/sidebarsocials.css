@@ -1,0 +1,20 @@
+.sideBar {
+    position: fixed;
+    width: 60px;
+    bottom: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+.vertical {
+    border-left: 4px solid black;
+    height: 100px;
+    display:inline-block;
+}
+
+.socialIcon {
+    font-size: 32px;
+    margin-bottom: 5px;
+    display:inline-block;
+    cursor: pointer;
+}
