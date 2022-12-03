@@ -3,7 +3,7 @@ import "./sidebarsocials.css"
 
 export default function SideBarSocials() {
   return (
-    <div className="sideBar">
+    <div className="sideBarSocials">
         
         <div>
             <i className="socialIcon fa-brands fa-stack-overflow"></i>
@@ -14,7 +14,7 @@ export default function SideBarSocials() {
         <div>
             <i className="socialIcon fa-brands fa-linkedin-in"></i>
         </div>
-        <div className="vertical ">
+        <div className="vertical">
 
         </div>
     </div>

@@ -1,10 +1,12 @@
+import React from 'react';
 import "./topbar.css"
 
+//TODO add my logo to the top right
 export default function TopBar() {
   return (
     <div className="top">
         <div className="topLeft">
-            hell ya
+          
         </div>
         <div className="topRight">
           <ul className="topList">
