@@ -1,6 +1,9 @@
 import React from 'react'
 import "./sidebarsocials.css"
 
+
+//TODO add email icon to this side 
+//TODO add email to other side like brittney chiangs
 export default function SideBarSocials() {
   return (
     <div className="sideBarSocials">
