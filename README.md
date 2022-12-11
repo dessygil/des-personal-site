@@ -72,3 +72,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 for the API I downloaded mongoose, dotenv, multer, express, nodemon
+
+
+#THINGS LEFT TO DO
+- Switch everything to grid
+- look at all todos and see what they say
+- a side bar with my profile desc and cats
+- obviously my main layout

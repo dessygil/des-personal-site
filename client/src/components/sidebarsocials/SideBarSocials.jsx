@@ -7,7 +7,9 @@ import "./sidebarsocials.css"
 export default function SideBarSocials() {
   return (
     <div className="sideBarSocials">
-        
+        <div>
+          <i className="socialIcon fa-solid fa-envelope"></i>
+        </div>
         <div>
             <i className="socialIcon fa-brands fa-stack-overflow"></i>
         </div>

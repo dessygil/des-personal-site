@@ -37,5 +37,5 @@ app.use("/api/categories", categoriesRoute);
 
 
 app.listen("5000", () => {
-    console.log("back");
+    console.log("Connected to port 5000");
 });

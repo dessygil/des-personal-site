@@ -57,16 +57,15 @@ router.get("/:id", async (req, res) => {
 router.get("/", async (req, res) => {
     
     const catName = req.query.cat;
-    
     try {
         
         let posts;
 
         if (catName) {
-            posts = await post.find({
+            posts = await Post.find({
                 categories: {
-                    $in: [catName],
-                },
+                    $in: [catName]
+                }
             });
         } else {
             posts = await Post.find();
