@@ -18,9 +18,9 @@ function App() {
       < SideBarSocials />
       <Router>
         <Routes>
-          <Route exact path="/" element={< Home />} />
-          <Route exact path="/post/:postId" element={< Single />} />
-          <Route exact path="/write" element={< Write />} />
+          <Route exact path="/blog" element={< Home />} />
+          <Route exact path="/blog/post/:postId" element={< Single />} />
+          <Route exact path="/blog/write" element={< Write />} />
         </Routes>
       </Router>
     </>

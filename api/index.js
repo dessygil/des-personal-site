@@ -4,11 +4,13 @@ const dotenv = require('dotenv').config();
 const mongoose = require("mongoose")
 const postsRoute = require("./routes/posts");
 const categoriesRoute = require("./routes/categories");
-const multer = require("multer")
+const multer = require("multer");
+const path = require("path");
 
 mongoose.set('strictQuery', false);
 
 app.use(express.json());
+app.use("/images", express.static(path.join(__dirname, "/images")));
 
 mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
