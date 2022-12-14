@@ -1,7 +1,7 @@
 import React from 'react';
 import TopBar from "./components/topbar/TopBar";
 import SideBarSocials from "./components/sidebarsocials/SideBarSocials";
-import Home from "./pages/home/Home";
+import Blog from "./pages/blog/Blog";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -18,9 +18,9 @@ function App() {
       < SideBarSocials />
       <Router>
         <Routes>
-          <Route exact path="/blog" element={< Home />} />
-          <Route exact path="/blog/post/:postId" element={< Single />} />
-          <Route exact path="/blog/write" element={< Write />} />
+          <Route exact path="/blog" element={< Blog />} />
+          <Route exact path="/post/:postId" element={< Single />} />
+          <Route exact path="/write" element={< Write />} />
         </Routes>
       </Router>
     </>
