@@ -1,0 +1,40 @@
+.meIntro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Roboto", sans-serif;
+}
+
+.meIntro-container > * {
+    margin:10px 0 10px 0;
+}
+
+.one {
+    margin-top: 100px;
+}
+
+.two {
+    font-size: 5em;
+}
+
+.three {
+    max-width: 540px;
+}
+
+.four {
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border: solid black;
+    border-radius: 10%;
+}
+
+.four:hover {
+  background-color: rgb(59, 96, 165);
+  outline: none;
+}

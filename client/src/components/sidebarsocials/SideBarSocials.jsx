@@ -1,27 +1,31 @@
-import React from 'react'
-import "./sidebarsocials.css"
+import React from "react";
+import "./sidebarsocials.css";
 
-
-//TODO add email icon to this side 
-//TODO add email to other side like brittney chiangs
+//TODO put them all up here like i did with the meintro as const and then map it onto
 export default function SideBarSocials() {
   return (
     <div className="sideBarSocials">
-        <div>
+      <div>
+        <a href="mailto: desmondgilmour@gmail.com">
           <i className="socialIcon fa-solid fa-envelope"></i>
-        </div>
-        <div>
-            <i className="socialIcon fa-brands fa-stack-overflow"></i>
-        </div>
-        <div>
-            <i className="socialIcon fa-brands fa-github"></i>
-        </div>
-        <div>
-            <i className="socialIcon fa-brands fa-linkedin-in"></i>
-        </div>
-        <div className="vertical">
-
-        </div>
+        </a>
+      </div>
+      <div>
+        <a href="https://stackoverflow.com/users/12100881/desmond-gilmour">
+          <i className="socialIcon fa-brands fa-stack-overflow"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://github.com/dessygil">
+          <i className="socialIcon fa-brands fa-github"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/desmond-gilmour-886b3a128/">
+          <i className="socialIcon fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+      <div className="vertical"></div>
     </div>
-  )
+  );
 }
