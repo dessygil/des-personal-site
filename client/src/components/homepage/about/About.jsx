@@ -52,7 +52,8 @@ export default function About() {
           </ul>
         </div> 
         <div className="right-side">
-          <img src="./headshot.jpg" className="" alt="headshot" />
+          //TODO Fix this picture andd why it cannot be found
+          <img src="client/src/components/homepage/about/headshot.jpg" />
         </div>
       </div>
     </div>
