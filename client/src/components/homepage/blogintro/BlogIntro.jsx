@@ -3,7 +3,7 @@ import "./blogintro.css";
 
 export default function BlogIntro() {
   return (
-    <div>
+    <div className="blog-intro">
       <h2 className="numbered-heading">
         Blog
       </h2>

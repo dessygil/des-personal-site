@@ -43,9 +43,18 @@
     font-size: 18px;
     font-weight: 300;
     cursor: pointer;
-    
     box-sizing: border-box;
     padding: 8px;
     border: solid black;
     border-radius: 10%;
+}
+
+.topListItemsResume:hover {
+  background-color: rgb(59, 96, 165);
+  outline: none;
+}
+
+.top-list-resume-a-tag{
+  text-decoration: none;
+  color: black;
 }

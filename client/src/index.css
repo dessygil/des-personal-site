@@ -1,5 +1,6 @@
 .full-page-structure {
   display: flex;
+  font-family: "Roboto", sans-serif;
 }
 
 .right-side-div {
@@ -12,10 +13,6 @@
 
 .left-side-div {
   flex: 1;
-}
-
-.text-styling{
-    font-family: "Roboto", sans-serif;
 }
 
 .numbered-heading {

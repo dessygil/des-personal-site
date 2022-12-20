@@ -17,7 +17,7 @@ export default function TopBar() {
             <li className="topListItems">2. Experience</li>
             <li className="topListItems">3. Portfolio</li>
             <li className="topListItems">4. Blog</li>
-            <li className="topListItemsResume">Resume</li>
+            <li className="topListItemsResume"><a className="top-list-resume-a-tag" href="./DesmondGilmourResume.pdf" download="DesmondGilmourResume.pdf">Resume</a></li>
           </ul>
         </div>
     </div>
