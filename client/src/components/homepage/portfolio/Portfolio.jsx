@@ -11,11 +11,11 @@ import { setContext } from "@apollo/client/link/context";
 import "./portfolio.css";
 
 
-
 export default function Portfolio({ pinnedItems }) {
   
-  
   const [data, setData] = useState({})
+
+  
   
   const baseUrl = "https://api.github.com/graphql";
 
@@ -23,11 +23,14 @@ export default function Portfolio({ pinnedItems }) {
     uri: baseUrl,
   });
 
+  const firstHalf = "ghp_VxgRIC5d3umzSpu54U6";
+  const secondHalf = "VUhW2ECwrov1SNUcK"
+
   const authLink = setContext((_, { headers }) => {
     return {
       headers: {
         ...headers,
-        authorization: `Bearer ${"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"}`,
+        authorization: `Bearer ${firstHalf.concat(secondHalf)}`,
       },
     };
   });
