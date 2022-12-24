@@ -79,4 +79,5 @@ for the API I downloaded mongoose, dotenv, multer, express, nodemon
 - look at all todos and see what they say
 - a side bar with my profile desc and cats
 - obviously my main layout
-- click on 
+- add bootstrap
+- change to typescript
