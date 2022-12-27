@@ -69,7 +69,6 @@ export default function Portfolio() {
         `,
       })
       .then((response) => {
-        console.log(response);
         setPinnedItems(
           response.data.user.pinnedItems.edges.map(({ node }) => node)
         );
@@ -77,26 +76,26 @@ export default function Portfolio() {
   }, []);
 
   const renderRepoTopics = (node) => {
-    return node.repositoryTopics.edges.map((node) => (
+    return node.repositoryTopics.edges.slice(0, 4).map((node) => (
       <li className="topic">{node.node.topic.name}</li>
     ));
   };
 
   const renderPinnedItems = () => {
     return pinnedItems.map((node) => (
-      <div className="card" style={{ width: "18rem" }}>
+      <div className="card main-cards" style={{ width: "18rem" }}>
         <div className="card-head">
           <i className="fa-light fa-folder"></i>
-          <a href={node.url} key={node.id}>
+          <a className="card-link" href={node.url} key={node.id}>
             <i className="fa-brands fa-github"></i>{" "}
           </a>
         </div>
 
         <div className="card-body">
-          <h5 className="card-title" key={node.id}>
+          <h5 className="card-title my-card-title" key={node.id}>
             {node.name}
           </h5>
-          <p className="card-text" key={node.id}>
+          <p className="card-text my-card-text" key={node.id}>
             {node.description}
           </p>
           <ul className="topics">{renderRepoTopics(node)}</ul>
@@ -110,7 +109,7 @@ export default function Portfolio() {
     <div className="portfolio">
       <h2 className="numbered-heading">Portfolio</h2>
       <div className="repos">
-        {pinnedItems.length ? renderPinnedItems() : <p>Loading</p>}
+        {pinnedItems.length ? renderPinnedItems() : <p>Loading...</p>}
       </div>
     </div>
   );

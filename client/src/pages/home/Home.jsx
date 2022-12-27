@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import axios from "axios";
 
 import "./home.css";
 
@@ -10,6 +11,7 @@ import BlogIntro from "../../components/homepage/blogintro/BlogIntro";
 import ContactMe from "../../components/homepage/contactme/ContactMe";
 
 export default function Home() {
+
   return (
     <div className="main-page">
       <MeIntro />

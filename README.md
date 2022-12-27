@@ -81,3 +81,6 @@ for the API I downloaded mongoose, dotenv, multer, express, nodemon
 - obviously my main layout
 - add bootstrap
 - change to typescript
+- change to include the hover over resume and contact me to have their effect text black and no underline
+- make the full card be the link
+- the post shouldn't have a generic picture but maybe about the author for each

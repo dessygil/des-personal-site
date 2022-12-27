@@ -80,19 +80,7 @@ router.get("/", async (req, res) => {
     }
 });
 
-//Get six most recent posts
-router.get("/threeMostRecent", async (req, res) => {
-    
-    try {
-        const posts = await Post.find();
-        console.log("you did make it here");
-        console.log(posts);
 
-        res.status(200).json(posts);
-    } catch (err) {
-        res.status(500).json(err);
-    }
-});
 
 
 module.exports = router;
