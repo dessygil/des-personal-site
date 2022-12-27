@@ -1,0 +1,40 @@
+.contact-me{
+    margin-top: 55vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-me-title{
+
+}
+.paragraph-container{
+
+}
+
+.contact-me-paragraph{
+    width: 40rem;
+}
+
+.button-container{
+
+}
+
+.contact-me-email-button{
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border: solid black;
+    border-radius: 10%;
+    width: 12rem;
+}
+
+.contact-me-email-button:hover {
+    background-color: rgb(59, 96, 165);
+    outline: none;
+  }

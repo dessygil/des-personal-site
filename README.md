@@ -78,9 +78,10 @@ for the API I downloaded mongoose, dotenv, multer, express, nodemon
 - Switch everything to grid
 - look at all todos and see what they say
 - a side bar with my profile desc and cats
-- obviously my main layout
+- change all numbered headings
 - add bootstrap
-- change to typescript
+- figure out how to write a nice blog filled with code snippets and screenshots
+- change everything to typescript
 - change to include the hover over resume and contact me to have their effect text black and no underline
 - make the full card be the link
 - the post shouldn't have a generic picture but maybe about the author for each

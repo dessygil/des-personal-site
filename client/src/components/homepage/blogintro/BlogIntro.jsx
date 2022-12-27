@@ -27,14 +27,14 @@ export default function BlogIntro() {
 
   const renderBlogPosts = () => {
     return recentPosts.map((node) => (
-      <div className="card" style={{ width: "18rem" }}>
+      <div className="card main-cards" style={{ width: "18rem" }}>
         <div className="card-head">
           
         </div>
 
         <div className="card-body">
           <Link to={`/post/${node._id}`} className="link">
-            <h5 className="card-title" key={node._id}>
+            <h5 className="card-title my-card-title" key={node._id}>
               {node.title}
             </h5>
           </Link>
