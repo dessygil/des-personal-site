@@ -4,9 +4,7 @@ import "./contactme.css";
 export default function ContactMe() {
   return (
     <div className="contact-me">
-      <h2>What's Next?</h2>
-
-      <h1 className="contact-me-title"></h1>
+      <h1 className="contact-me-title">What's Next?</h1>
       <div className="paragraph-container">
         <p className="contact-me-paragraph">
           Although I’m not currently looking for any new opportunities, my inbox

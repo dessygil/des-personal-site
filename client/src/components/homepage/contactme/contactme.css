@@ -3,13 +3,15 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 .contact-me-title{
-
+    font-size: 3rem;
+    margin-bottom: 3rem;
 }
 .paragraph-container{
-
+    margin: 0 auto;
 }
 
 .contact-me-paragraph{
