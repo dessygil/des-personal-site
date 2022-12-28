@@ -41,6 +41,6 @@ app.use("/api/categories", categoriesRoute);
 app.use("/api/sixrecent", sixrecentRoute);
 
 
-app.listen("5000", () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log("Connected to port 5000");
 });

@@ -85,3 +85,4 @@ for the API I downloaded mongoose, dotenv, multer, express, nodemon
 - change to include the hover over resume and contact me to have their effect text black and no underline
 - make the full card be the link
 - the post shouldn't have a generic picture but maybe about the author for each
+- make sure my resume can download from the site
