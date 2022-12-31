@@ -1,5 +1,4 @@
-import React, {useEffect, useState} from "react";
-import axios from "axios";
+import React from "react";
 
 import "./home.css";
 
@@ -9,6 +8,8 @@ import Experience from "../../components/homepage/experience/Experience";
 import Portfolio from "../../components/homepage/portfolio/Portfolio";
 import BlogIntro from "../../components/homepage/blogintro/BlogIntro";
 import ContactMe from "../../components/homepage/contactme/ContactMe";
+
+const homeComponents = [<MeIntro />, <About />, <Experience />, <Portfolio />, <BlogIntro />, <ContactMe />];
 
 export default function Home() {
 

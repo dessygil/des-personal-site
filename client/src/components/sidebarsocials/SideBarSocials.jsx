@@ -1,7 +1,6 @@
 import React from "react";
 import "./sidebarsocials.css";
 
-//TODO put them all up here like i did with the meintro as const and then map it onto
 export default function SideBarSocials() {
   return (
     <div className="sideBarSocials">

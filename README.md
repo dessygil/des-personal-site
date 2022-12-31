@@ -76,9 +76,7 @@ for the API I downloaded mongoose, dotenv, multer, express, nodemon
 
 #THINGS LEFT TO DO
 - Switch everything to grid
-- look at all todos and see what they say
 - a side bar with my profile desc and cats
-- change all numbered headings
 - add bootstrap
 - figure out how to write a nice blog filled with code snippets and screenshots
 - change everything to typescript
@@ -86,4 +84,16 @@ for the API I downloaded mongoose, dotenv, multer, express, nodemon
 - make the full card be the link
 - the post shouldn't have a generic picture but maybe about the author for each
 - make sure my resume can download from the site
-- less whitespace between sections
+- fix the apollo query
+- add the appolo at the bottom of it
+- make site https
+- fix all npm high severity errors
+- change proxy to make the frontend call to backend on heroku
+- maybe try site security course from code academy
+- GET FIRST BLOG POST IN 
+- figure out how make my general blog posts better
+- figure out how to make the margin top consistent throughout whole site
+- work on making an experience part
+- get a 404 page
+- add a footer
+- add a logo

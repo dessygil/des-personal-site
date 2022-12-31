@@ -12,7 +12,6 @@ export default function About() {
     "Java",
   ];
 
-  //TODO need to fix this so it shows my picture 
   return (
     <div className="content-box">
       <h2 className="numbered-heading">About Me</h2>
@@ -52,7 +51,6 @@ export default function About() {
           </ul>
         </div> 
         <div className="right-side">
-          //TODO Fix this picture andd why it cannot be found
           <img src="client/src/components/homepage/about/headshot.jpg" />
         </div>
       </div>

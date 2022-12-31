@@ -1,7 +1,7 @@
 .content-box {
   display: flex;
   flex-direction: column;
-  margin-top: 55vh;
+  margin-top: 30vh;
 }
 
 .content-box-inner{
