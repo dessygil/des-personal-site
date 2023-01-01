@@ -77,8 +77,6 @@ for the API I downloaded mongoose, dotenv, multer, express, nodemon
 #THINGS LEFT TO DO
 - Switch everything to grid
 - a side bar with my profile desc and cats
-- add bootstrap
-- figure out how to write a nice blog filled with code snippets and screenshots
 - change everything to typescript
 - change to include the hover over resume and contact me to have their effect text black and no underline
 - make the full card be the link
@@ -91,9 +89,13 @@ for the API I downloaded mongoose, dotenv, multer, express, nodemon
 - change proxy to make the frontend call to backend on heroku
 - maybe try site security course from code academy
 - GET FIRST BLOG POST IN 
+- - figure out how to write a nice blog filled with code snippets and screenshots
 - figure out how make my general blog posts better
 - figure out how to make the margin top consistent throughout whole site
 - work on making an experience part
 - get a 404 page
 - add a footer
 - add a logo
+- build out experience
+- have button to bring to blog page
+- change bottom for whats next

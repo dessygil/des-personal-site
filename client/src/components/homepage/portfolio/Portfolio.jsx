@@ -106,7 +106,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="portfolio">
+    <div id="portfolio-anchor" className="portfolio">
       <h2 className="numbered-heading">Portfolio</h2>
       <div className="repos">
         {pinnedItems.length ? renderPinnedItems() : <p>Loading...</p>}

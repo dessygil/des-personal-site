@@ -49,7 +49,7 @@ export default function BlogIntro() {
   };
 
   return (
-    <div className="blog-intro">
+    <div id="blog-intro-anchor" className="blog-intro">
       <h2 className="numbered-heading"></h2>
       <div className="blog-posts">
         {recentPosts.length ? renderBlogPosts() : <p>Loading...</p>}

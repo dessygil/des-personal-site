@@ -7,6 +7,7 @@ import Blog from "./pages/blog/Blog";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import Home from './pages/home/Home';
+import NotFound from './pages/notfound/NotFound'
 
 import "./index.css";
 
@@ -27,6 +28,7 @@ function App() {
               <Route exact path="/blog" element={< Blog />} />
               <Route exact path="/post/:postId" element={< Single />} />
               <Route exact path="/write" element={< Write />} />
+              <Route exact path="*" element={<NotFound/>} />
             </Routes>
           </Router>
         </div>

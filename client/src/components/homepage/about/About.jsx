@@ -13,7 +13,7 @@ export default function About() {
   ];
 
   return (
-    <div className="content-box">
+    <div id="about-anchor" className="content-box">
       <h2 className="numbered-heading">About Me</h2>
       <div className="content-box-inner">
         <div className="left-side">
