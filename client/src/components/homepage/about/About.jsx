@@ -1,6 +1,8 @@
 import React from "react";
+
 import "./about.css";
 import "../../../index.css";
+import headshot from "./headshot.jpg";
 
 export default function About() {
   const skills = [
@@ -49,9 +51,15 @@ export default function About() {
                 </li>
               ))}
           </ul>
-        </div> 
+        </div>
         <div className="right-side">
-          <img src="client/src/components/homepage/about/headshot.jpg" />
+          <div className="img-wrapper">
+            <img
+              className="headshot"
+              src={headshot}
+              alt="Desmond's Professional Headshot"
+            />
+          </div>
         </div>
       </div>
     </div>

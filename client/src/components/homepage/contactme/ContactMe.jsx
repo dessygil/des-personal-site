@@ -7,14 +7,14 @@ export default function ContactMe() {
       <h1 className="contact-me-title">What's Next?</h1>
       <div className="paragraph-container">
         <p className="contact-me-paragraph">
-          Although I’m not currently looking for any new opportunities, my inbox
-          is always open. Whether you have a question or just want to say hi,
-          I’ll try my best to get back to you!
+          My inbox is open for any new opportunity. Whether you have a
+          question or just want to say hi, shoot me a message and I'll do my
+          best to get back to you.
         </p>
       </div>
       <div className="button-container">
         <a
-          className="contact-me-email-button"
+          className="contact-me-email-button global-button"
           href="mailto: desmondgilmour@gmail.com"
         >
           Contact me!

@@ -1,5 +1,6 @@
-import React from 'react';
+import React from "react";
 import "./topbar.css";
+import resume from "./DesmondGilmourResume.pdf"
 //import { Link } from "react-router-dom";
 
 //TODO add my logo to the top right
@@ -10,18 +11,34 @@ import "./topbar.css";
 export default function TopBar() {
   return (
     <div className="top">
-        <div className="topLeft">
-          
-        </div>
-        <div className="topRight">
-          <ul className="topList">
-            <li className="topListItems"><a href="#about-anchor">1. About</a></li>
-            <li className="topListItems"><a href="#experience-anchor">2. Experience</a></li>
-            <li className="topListItems"><a href="#portfolio-anchor">3. Portfolio</a></li>
-            <li className="topListItems"><a href="#blog-intro-anchor">4. Blog</a></li>
-            <li className="topListItemsResume"><a className="top-list-resume-a-tag" href="./DesmondGilmourResume.pdf" download="DesmondGilmourResume.pdf">Resume</a></li>
-          </ul>
-        </div>
+      <h2 className="site-logo">
+        DG
+      </h2>
+      <div className="topRight">
+        <ul className="topList">
+          <li className="topListItems">
+            <a href="#about-anchor">1. About</a>
+          </li>
+          <li className="topListItems">
+            <a href="#experience-anchor">2. Experience</a>
+          </li>
+          <li className="topListItems">
+            <a href="#portfolio-anchor">3. Portfolio</a>
+          </li>
+          <li className="topListItems">
+            <a href="#blog-intro-anchor">4. Blog</a>
+          </li>
+          <li className="topListItemsResume">
+            <a
+              className="top-list-resume-a-tag"
+              href={resume}
+              download
+            >
+              Resume
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  )
+  );
 }
