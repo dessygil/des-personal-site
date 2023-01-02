@@ -39,14 +39,25 @@
 .topListItems {
   margin-right: 40px;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500;
   cursor: pointer;
 }
+
+.top-list-item-tag{
+  text-decoration: none;
+  color: black;
+}
+
+.top-list-item-tag:hover{
+  text-decoration: none;
+  color: rgb(59, 96, 165);
+}
+
 
 .topListItemsResume {
   margin-right: 40px;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   cursor: pointer;
   box-sizing: border-box;
   padding: 8px;

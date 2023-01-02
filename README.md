@@ -73,26 +73,32 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 for the API I downloaded mongoose, dotenv, multer, express, nodemon
 
+git subtree push --prefix api heroku master to push any backend changes to the github repository 
 
-#THINGS LEFT TO DO
-- change everything to typescript
-- change to include the hover over resume and contact me to have their effect text black and no underline
+
+#THINGS LEFT TO DO NOW
+
 - make the full card be the link
 - the post shouldn't have a generic picture but maybe about the author for each
-- fix the apollo query
-- add the appolo at the bottom of it
+- fix the apollo query so it is from backend and secure
 - make site https
 - fix all npm high severity errors
 - change proxy to make the frontend call to backend on heroku
-- maybe try site security course from code academy
-- GET FIRST BLOG POST IN 
-- figure out how to write a nice blog filled with code snippets and screenshots
-- figure out how make my general blog posts better
-- figure out how to make the margin top consistent throughout whole site
 - work on making an experience part
-- Format 404 page
-- add a footer
+- add a footer with information from github
 - build out experience
+  
+
+#THINGS LEFT TO DO LATER
+- Make sure logo at top links back to homepage
+- remove numbers from headers (It is isn't a list but a subtitle)
+- make all css consistent naming style
+- make top list item a tag have a before for the number for counting and maybe use a counter as well as map function
 - have button to bring to blog page at home page
 - top list resume could be better put together the a tag inside the div have the exact same 
 - website can be pulled from github so I can add a link to github projects that are being hosted
+- find way to make css more global (buttons and margin top between sections on home page)
+- figure out how to make the blog posts better with snippets and screen shots and make your first blog post
+- do codecademy site security course
+- change everything to typescript
+- 
