@@ -80,7 +80,6 @@ git subtree push --prefix api heroku master to push any backend changes to the g
 
 - make the full card be the link
 - the post shouldn't have a generic picture but maybe about the author for each
-- fix the apollo query so it is from backend and secure
 - make site https
 - fix all npm high severity errors
 - change proxy to make the frontend call to backend on heroku
@@ -101,4 +100,5 @@ git subtree push --prefix api heroku master to push any backend changes to the g
 - figure out how to make the blog posts better with snippets and screen shots and make your first blog post
 - do codecademy site security course
 - change everything to typescript
-- 
+- fix the apollo query to make it from the backend
+- add blog later because you need to have your code interpret what you are putting

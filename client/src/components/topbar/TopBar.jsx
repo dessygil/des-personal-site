@@ -17,16 +17,10 @@ export default function TopBar() {
       <div className="topRight">
         <ul className="topList">
           <li className="topListItems">
-            <a className="top-list-item-tag" href="#about-anchor">1. About</a>
+            <a className="top-list-item-tag" href="#about-anchor">About</a>
           </li>
           <li className="topListItems">
-            <a className="top-list-item-tag" href="#experience-anchor">2. Experience</a>
-          </li>
-          <li className="topListItems">
-            <a className="top-list-item-tag" href="#portfolio-anchor">3. Portfolio</a>
-          </li>
-          <li className="topListItems">
-            <a className="top-list-item-tag" href="#blog-intro-anchor">4. Blog</a>
+            <a className="top-list-item-tag" href="#portfolio-anchor">Portfolio</a>
           </li>
           <li className="topListItemsResume">
             <a
@@ -42,3 +36,11 @@ export default function TopBar() {
     </div>
   );
 }
+/*
+<li className="topListItems">
+            <a className="top-list-item-tag" href="#blog-intro-anchor">Blog</a>
+          </li>
+
+<li className="topListItems">
+            <a className="top-list-item-tag" href="#experience-anchor">Experience</a>
+          </li> */

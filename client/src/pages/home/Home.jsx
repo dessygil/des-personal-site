@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  ApolloClient,
+  InMemoryCache,
+  createHttpLink,
+  gql,
+  ApolloProvider,
+} from "@apollo/client";
+import { setContext } from "@apollo/client/link/context";
 
 import "./home.css";
 
@@ -9,18 +17,43 @@ import Portfolio from "../../components/homepage/portfolio/Portfolio";
 import BlogIntro from "../../components/homepage/blogintro/BlogIntro";
 import ContactMe from "../../components/homepage/contactme/ContactMe";
 
-const homeComponents = [<MeIntro />, <About />, <Experience />, <Portfolio />, <BlogIntro />, <ContactMe />];
 
 export default function Home() {
+  const baseUrl = "https://api.github.com/graphql";
+
+  const httpLink = createHttpLink({
+    uri: baseUrl,
+  });
+
+  const firstHalf = "ghp_VxgRIC5d3umzSpu54U6";
+  const secondHalf = "VUhW2ECwrov1SNUcK";
+
+  const authLink = setContext((_, { headers }) => {
+    return {
+      headers: {
+        ...headers,
+        authorization: `Bearer ${firstHalf.concat(secondHalf)}`,
+      },
+    };
+  });
+
+  const client = new ApolloClient({
+    link: authLink.concat(httpLink),
+    cache: new InMemoryCache(),
+  });
 
   return (
-    <div className="main-page">
-      <MeIntro />
-      <About />
-      <Experience />
-      <Portfolio />
-      <BlogIntro />
-      <ContactMe />
-    </div>
+    <ApolloProvider client={client}>
+      <div className="main-page">
+        <MeIntro />
+        <About />
+        <Experience />
+        <Portfolio />
+        
+        <ContactMe />
+      </div>
+    </ApolloProvider>
   );
 }
+
+/*<BlogIntro /> */

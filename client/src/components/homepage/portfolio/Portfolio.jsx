@@ -4,11 +4,12 @@ import {
   InMemoryCache,
   createHttpLink,
   gql,
+  ApolloProvider
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 
 import "./portfolio.css";
-import { shouldCanonizeResults } from "@apollo/client/cache/inmemory/helpers";
+
 
 export default function Portfolio() {
   const [pinnedItems, setPinnedItems] = useState([]);
