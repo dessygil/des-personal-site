@@ -92,13 +92,10 @@ git subtree push --prefix api heroku master to push any backend changes to the g
 - Make sure logo at top links back to homepage
 - remove numbers from headers (It is isn't a list but a subtitle)
 - make all css consistent naming style
-- make top list item a tag have a before for the number for counting and maybe use a counter as well as map function
 - have button to bring to blog page at home page
 - top list resume could be better put together the a tag inside the div have the exact same 
 - website can be pulled from github so I can add a link to github projects that are being hosted
 - find way to make css more global (buttons and margin top between sections on home page)
-- figure out how to make the blog posts better with snippets and screen shots and make your first blog post
-- do codecademy site security course
 - change everything to typescript
-- fix the apollo query to make it from the backend
-- add blog later because you need to have your code interpret what you are putting
+- add date created to posts and projects and maybe an image for the blog posts
+- get rid of numbers

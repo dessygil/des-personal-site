@@ -49,11 +49,11 @@ export default function Home() {
         <About />
         <Experience />
         <Portfolio />
-        
+        <BlogIntro />
         <ContactMe />
       </div>
     </ApolloProvider>
   );
 }
 
-/*<BlogIntro /> */
+/* */

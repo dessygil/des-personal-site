@@ -4,12 +4,11 @@ import {
   InMemoryCache,
   createHttpLink,
   gql,
-  ApolloProvider
+  ApolloProvider,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 
 import "./portfolio.css";
-
 
 export default function Portfolio() {
   const [pinnedItems, setPinnedItems] = useState([]);
@@ -77,9 +76,9 @@ export default function Portfolio() {
   }, []);
 
   const renderRepoTopics = (node) => {
-    return node.repositoryTopics.edges.slice(0, 4).map((node) => (
-      <li className="topic">{node.node.topic.name}</li>
-    ));
+    return node.repositoryTopics.edges
+      .slice(0, 4)
+      .map((node) => <li className="topic">{node.node.topic.name}</li>);
   };
 
   const renderPinnedItems = () => {
@@ -101,7 +100,6 @@ export default function Portfolio() {
           </p>
           <ul className="topics">{renderRepoTopics(node)}</ul>
         </div>
-
       </div>
     ));
   };

@@ -1,49 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
-import axios from "axios";
+import React, { useState, useEffect } from "react";
 
 import "./blogintro.css";
 
 export default function BlogIntro() {
-
-  const [recentPosts, setRecentPosts] = useState([])
+  const [recentPosts, setRecentPosts] = useState([]);
 
   useEffect(() => {
-    const getPost = async () => {
-      const res = await axios.get("/sixrecent");
-      setRecentPosts(res.data);
-    };
-    getPost();
+    fetch("https://dev.to/api/articles?username=dessygil", {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((res) => res.json())
+      .then((json) => setRecentPosts(json));
   }, []);
-  useEffect(() => {
-    console.log(recentPosts)
-  })
 
   const renderBlogTopics = (node) => {
-    return node.categories.map((node) => (
-      <li className="topic">{node}</li>
-    ));
-  }
+    return node.tag_list
+      .slice(0, 4)
+      .map((node) => <li className="topic">{node}</li>);
+  };
 
   const renderBlogPosts = () => {
-    return recentPosts.map((node) => (
+    return recentPosts.slice(0, 6).map((node) => (
       <div className="card main-cards" style={{ width: "18rem" }}>
-        <div className="card-head">
-          
-        </div>
+        <div className="card-head"></div>
 
         <div className="card-body">
-          <Link to={`/post/${node._id}`} className="link">
-            <h5 className="card-title my-card-title" key={node._id}>
+          <a className="" href={node.url}>
+            <h5 className="card-title my-card-title" key={node.id}>
               {node.title}
             </h5>
-          </Link>
-          <p className="card-text my-card-text" key={node._id}>
-            {node.desc}
+          </a>
+          <p className="card-text my-card-text" key={node.id}>
+            {node.description}
           </p>
           <ul className="topics">{renderBlogTopics(node)}</ul>
         </div>
-
       </div>
     ));
   };
@@ -55,5 +49,14 @@ export default function BlogIntro() {
         {recentPosts.length ? renderBlogPosts() : <p>Loading...</p>}
       </div>
     </div>
-  )
+  );
 }
+
+/* useEffect(() => {
+  const getPost = async () => {
+    const res = await axios.get("/sixrecent");
+    setRecentPosts(res.data);
+  };
+  getPost();
+}, []);
+*/
