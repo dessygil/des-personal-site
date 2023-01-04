@@ -99,3 +99,4 @@ git subtree push --prefix api heroku master to push any backend changes to the g
 - change everything to typescript
 - add date created to posts and projects and maybe an image for the blog posts
 - get rid of numbers
+- might be worth getting rid of backend

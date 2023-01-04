@@ -5,15 +5,21 @@ import "./blogintro.css";
 export default function BlogIntro() {
   const [recentPosts, setRecentPosts] = useState([]);
 
+  // This works but only on my hosted website
   useEffect(() => {
-    fetch("https://dev.to/api/articles?username=dessygil", {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
-      .then((res) => res.json())
-      .then((json) => setRecentPosts(json));
+    fetch("https://dev.to/api/articles?username=dessygil")
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        }
+        throw new Error("Error connecting to Dev.to API");
+      })
+      .then((json) => {
+        setRecentPosts(json);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
 
   const renderBlogTopics = (node) => {
