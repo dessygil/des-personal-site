@@ -79,10 +79,8 @@ git subtree push --prefix api heroku master to push any backend changes to the g
 #THINGS LEFT TO DO NOW
 
 - make the full card be the link
-- the post shouldn't have a generic picture but maybe about the author for each
 - make site https
 - fix all npm high severity errors
-- change proxy to make the frontend call to backend on heroku
 - work on making an experience part
 - add a footer with information from github
 - build out experience
