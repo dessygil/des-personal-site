@@ -14,13 +14,28 @@
   flex: 4;
 }
 
+.home-page-logo-link{
+  text-decoration: None;
+  color: rgb(59, 96, 165);
+}
+
+.home-page-logo-link:hover{
+  text-decoration: None;
+  color: rgb(59, 96, 165);
+}
+
 .site-logo {
   border: solid black 2px;
   margin-top: 30px;
   margin-left: 25px;
   padding: 10px;
   border-radius: 10%;
-  color: rgb(59, 96, 165);
+  color: black;
+  
+}
+
+.site-logo:hover {
+  background-color: rgba(59, 96, 165, 0.4);
 }
 
 .topRight {

@@ -82,13 +82,11 @@ git subtree push --prefix api heroku master to push any backend changes to the g
 - make site https
 - fix all npm high severity errors
 - work on making an experience part
-- add a footer with information from github
+- add a footer with information from github make apollo better
 - build out experience
   
 
 #THINGS LEFT TO DO LATER
-- Make sure logo at top links back to homepage
-- remove numbers from headers (It is isn't a list but a subtitle)
 - make all css consistent naming style
 - have button to bring to blog page at home page
 - top list resume could be better put together the a tag inside the div have the exact same 
@@ -98,3 +96,4 @@ git subtree push --prefix api heroku master to push any backend changes to the g
 - add date created to posts and projects and maybe an image for the blog posts
 - get rid of numbers
 - might be worth getting rid of backend
+- start a new branch to change it to typescript

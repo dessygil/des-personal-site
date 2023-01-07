@@ -12,24 +12,24 @@ import resume from "./DesmondGilmourResume.pdf";
 export default function TopBar() {
   return (
     <div className="top">
-      <a href="/">
+      <a className="home-page-logo-link" href="/">
         <h2 className="site-logo">DG</h2>
       </a>
       <div className="topRight">
         <ul className="topList">
           <li className="topListItems">
             <a className="top-list-item-tag" href="#about-anchor">
-              About
+              01.About
             </a>
           </li>
           <li className="topListItems">
             <a className="top-list-item-tag" href="#portfolio-anchor">
-              Portfolio
+              02. Portfolio
             </a>
           </li>
           <li className="topListItems">
             <a className="top-list-item-tag" href="#blog-intro-anchor">
-              Blog
+              03. Blog
             </a>
           </li>
           <li className="topListItemsResume">
