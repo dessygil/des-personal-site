@@ -5,6 +5,7 @@ const mongoose = require("mongoose")
 const postsRoute = require("./routes/posts");
 const categoriesRoute = require("./routes/categories");
 const sixrecentRoute = require("./routes/sixrecent");
+const jobsRoute = require("./routes/jobs");
 const multer = require("multer");
 const path = require("path");
 
@@ -39,6 +40,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 app.use("/api/posts", postsRoute);
 app.use("/api/categories", categoriesRoute);
 app.use("/api/sixrecent", sixrecentRoute);
+app.use("/api/jobs", jobsRoute);
 
 
 app.listen(process.env.PORT || 5000, () => {
