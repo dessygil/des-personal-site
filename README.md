@@ -92,8 +92,12 @@ git subtree push --prefix api heroku master to push any backend changes to the g
 - top list resume could be better put together the a tag inside the div have the exact same 
 - website can be pulled from github so I can add a link to github projects that are being hosted
 - find way to make css more global (buttons and margin top between sections on home page)
-- change everything to typescript
 - add date created to posts and projects and maybe an image for the blog posts
-- get rid of numbers
-- might be worth getting rid of backend
 - start a new branch to change it to typescript
+- add URL option to jump to next page
+- look at last personal website you have seen.
+- add apollo options to the site at the bottom
+- work on Readme for this site.
+- work on tags for this
+- add more flare to the website
+- add a loader before your site appears
