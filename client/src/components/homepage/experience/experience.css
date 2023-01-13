@@ -49,6 +49,19 @@
     font-weight: 300;
 }
 
-.content{
-    
+.duties-list{
+    list-style: none;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+
+.duties{
+
+}
+
+.duties::before{
+    content: "▹ ";
+    color: rgb(59, 96, 165);
+    font-size: 1em;
+    line-height: 12px;
 }

@@ -72,6 +72,11 @@ export default function Experience() {
             <span>Present</span>
           )}
         </p>
+        <ul className="duties-list">
+        {jobs[activeTab].duties.map((node, i) => {
+          return <li key={i} className="duties">{node}</li>
+        })}
+        </ul>    
       </>
     );
   };
