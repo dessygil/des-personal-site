@@ -5,7 +5,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import moment from "moment"
+import moment from "moment";
 
 import "./experience.css";
 
@@ -55,25 +55,50 @@ export default function Experience() {
     return (
       <>
         <h3>
-          <span>{jobs[activeTab].title}</span>
-          <span className>
-            <a href={jobs[activeTab].url} className>
+          <span className="title">{jobs[activeTab].title}</span>
+          <span className="company">
+            &nbsp;@&nbsp;
+            <a href={jobs[activeTab].url} className="company-link">
               {jobs[activeTab].company}
             </a>
           </span>
         </h3>
 
-        <p className>{formatDate(jobs[activeTab].startDate)}</p>
+        <p className="date">
+          {formatDate(jobs[activeTab].startDate)}&nbsp;-&nbsp;
+          {jobs[activeTab].endDate ? (
+            formatDate(jobs[activeTab].endDate)
+          ) : (
+            <span>Present</span>
+          )}
+        </p>
       </>
     );
   };
-  
+
   const formatDate = (date) => {
+    let monthDict = {
+      1: "January",
+      2: "February",
+      3: "March",
+      4: "April",
+      5: "May",
+      6: "June",
+      7: "July",
+      8: "August",
+      9: "September",
+      10: "October",
+      11: "November",
+      12: "December",
+    };
+
     let d = new Date(date);
 
     let month = d.getMonth() + 1;
-    console.log(month);
-  } 
+    let year = String(d.getFullYear());
+
+    return monthDict[month] + " " + year;
+  };
 
   return (
     <div className="experience-anchor">
@@ -101,13 +126,7 @@ export default function Experience() {
             <p> Loading</p>
           )}
         </Tabs>
-        <TabPanel>
-        {jobs.length ? (
-            renderTabPanel()
-          ) : (
-            <p> Loading</p>
-          )}
-        </TabPanel>
+        <TabPanel>{jobs.length ? renderTabPanel() : <p> Loading</p>}</TabPanel>
       </Box>
     </div>
   );
