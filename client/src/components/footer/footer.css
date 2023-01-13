@@ -1,0 +1,14 @@
+.footer{
+    height: 100px;
+    text-align: center;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-link:hover{
+    text-decoration: none;
+    color: rgb(59, 96, 165);
+}

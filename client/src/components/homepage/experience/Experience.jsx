@@ -20,7 +20,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ p: 3 }} className="box-content">
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -73,9 +73,9 @@ export default function Experience() {
           )}
         </p>
         <ul className="duties-list">
-        {jobs[activeTab].duties.map((node, i) => {
-          return <li key={i} className="duties">{node}</li>
-        })}
+          {jobs[activeTab].duties.map((node, i) => {
+            return <li key={i} className="duties">{node}</li>
+          })}
         </ul>    
       </>
     );
@@ -106,7 +106,7 @@ export default function Experience() {
   };
 
   return (
-    <div className="experience-anchor">
+    <div className="experience" id="experience-anchor">
       <h2 className="numbered-heading">Where I’ve Worked</h2>
       <Box
         sx={{

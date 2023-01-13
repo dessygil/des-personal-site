@@ -23,13 +23,18 @@ export default function TopBar() {
             </a>
           </li>
           <li className="topListItems">
+            <a className="top-list-item-tag" href="#experience-anchor">
+              02. Experience
+            </a>
+          </li>
+          <li className="topListItems">
             <a className="top-list-item-tag" href="#portfolio-anchor">
-              02. Portfolio
+              03. Portfolio
             </a>
           </li>
           <li className="topListItems">
             <a className="top-list-item-tag" href="#blog-intro-anchor">
-              03. Blog
+              04. Blog
             </a>
           </li>
           <li className="topListItemsResume">

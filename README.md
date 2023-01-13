@@ -81,9 +81,10 @@ git subtree push --prefix api heroku master to push any backend changes to the g
 - make the full card be the link
 - make site https
 - fix all npm high severity errors
-- work on making an experience part
-- add a footer with information from github make apollo better
-- build out experience
+ make apollo better
+- fix the way when clicking on experience the way it moves
+- clear warnings
+- start using j unit cypress or whatever else
   
 
 #THINGS LEFT TO DO LATER
@@ -101,3 +102,6 @@ git subtree push --prefix api heroku master to push any backend changes to the g
 - work on tags for this
 - add more flare to the website
 - add a loader before your site appears
+- add tailwind and animations
+- create a way to update delete and create in postman
+- commit to heroku to get everything working again

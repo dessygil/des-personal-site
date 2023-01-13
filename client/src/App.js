@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import TopBar from "./components/topbar/TopBar";
 import SideBarSocials from "./components/sidebarsocials/SideBarSocials";
+import Footer from "./components/footer/Footer";
 import Blog from "./pages/blog/Blog";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
@@ -28,13 +29,15 @@ function App() {
               <Route exact path="/blog" element={< Blog />} />
               <Route exact path="/post/:postId" element={< Single />} />
               <Route exact path="/write" element={< Write />} />
-              <Route exact path="*" element={<NotFound/>} />
+              <Route exact path="*" element={<NotFound />} />
             </Routes>
           </Router>
         </div>
         <div className="left-side-div">
-
         </div>
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </>
   );

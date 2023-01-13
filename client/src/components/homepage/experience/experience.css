@@ -1,4 +1,4 @@
-.experience-anchor{
+.experience{
     margin-top: 30vh;
 }
 
@@ -49,19 +49,29 @@
     font-weight: 300;
 }
 
+.box-content{
+    padding-top: 0 !important;
+    margin-left: 25px;
+}
+
 .duties-list{
     list-style: none;
     margin-block-start: 0;
     padding-inline-start: 0;
+    display: list-item;
 }
 
 .duties{
-
+ margin-bottom: 10px;
+ position: relative;
+ padding-left: 30px;
+ width: 600px;
 }
 
 .duties::before{
     content: "▹ ";
+    position: absolute;
+    left: 0px;
     color: rgb(59, 96, 165);
     font-size: 1em;
-    line-height: 12px;
 }
