@@ -3,6 +3,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.body{
+  
+}
+
 .right-side-div {
   flex: 1;
 }
@@ -14,5 +18,3 @@
 .left-side-div {
   flex: 1;
 }
-
-

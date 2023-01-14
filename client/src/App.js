@@ -14,7 +14,7 @@ import "./index.css";
 
 function App() {
   return (
-    <>
+    <div className="body">
       <div>
         < TopBar />
       </div>
@@ -39,7 +39,7 @@ function App() {
       <div className="footer">
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
 export default App;

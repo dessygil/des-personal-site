@@ -97,7 +97,7 @@ git subtree push --prefix api heroku master to push any backend changes to the g
 - start a new branch to change it to typescript
 - add URL option to jump to next page
 - look at last personal website you have seen.
-- add apollo options to the site at the bottom
+- pick color scheme and fix my picture
 - work on Readme for this site.
 - work on tags for this
 - add more flare to the website
@@ -105,3 +105,6 @@ git subtree push --prefix api heroku master to push any backend changes to the g
 - add tailwind and animations
 - create a way to update delete and create in postman
 - commit to heroku to get everything working again
+- add some adds on the left hand side
+- add redux somehow
+  
