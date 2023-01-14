@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .full-page-structure {
   display: flex;
   font-family: "Roboto", sans-serif;
