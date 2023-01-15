@@ -50,7 +50,6 @@ export default function Footer() {
         `,
       })
       .then((response) => {
-        console.log(response.data.viewer.repository);
         setPersonalSite(response.data.viewer.repository);
       });
   }, []);

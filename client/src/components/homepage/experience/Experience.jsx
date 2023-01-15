@@ -44,9 +44,9 @@ export default function Experience() {
 
   useEffect(() => {
     const getJobs = async () => {
-      const res = await axios.get("/");
+      const res = await axios.get("https://des-personal-site.herokuapp.com/");
       setJobs(res.data);
-      console.log(res);
+      console.log("your data", res.data);
     };
     getJobs();
   }, []);
