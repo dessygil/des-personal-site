@@ -44,7 +44,7 @@ export default function Experience() {
 
   useEffect(() => {
     const getJobs = async () => {
-      const res = await axios.get("/jobs/");
+      const res = await axios.get("/");
       setJobs(res.data);
       console.log(res);
     };
