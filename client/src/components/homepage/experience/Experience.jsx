@@ -43,8 +43,9 @@ export default function Experience() {
   };
 
   useEffect(() => {
+    fetch("http://localhost:5000").then((res) => res.json()).then((data) => console.log(data));
     const getJobs = async () => {
-      const res = await axios.get("https://des-personal-site.herokuapp.com/");
+      const res = await axios.get("http://localhost:5000/");
       setJobs(res.data);
       console.log("your data", res.data);
     };
