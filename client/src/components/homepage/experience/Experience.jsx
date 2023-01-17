@@ -43,11 +43,10 @@ export default function Experience() {
   };
 
   useEffect(() => {
-    fetch("https://des-personal-site.herokuapp.com/", {mode:'cors'}).then((res) => res.json()).then((data) => console.log(data));
     const getJobs = async () => {
-      const res = await axios.get("/");
-      setJobs(res.data);
-      console.log("your data", res.data);
+      const res = await fetch("https://des-personal-site.herokuapp.com/", {mode:'cors'})
+      const jobs = await res.json();
+      setJobs(jobs)
     };
     getJobs();
   }, []);
