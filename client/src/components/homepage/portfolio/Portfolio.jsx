@@ -4,7 +4,6 @@ import {
   InMemoryCache,
   createHttpLink,
   gql,
-  ApolloProvider,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 
@@ -105,7 +104,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div id="portfolio-anchor" className="portfolio">
+    <div id="Portfolio-anchor" className="portfolio">
       <h2 className="numbered-heading">Portfolio</h2>
       <div className="repos">
         {pinnedItems.length ? renderPinnedItems() : <p>Loading...</p>}

@@ -44,6 +44,7 @@ export default function Footer() {
               repository(name: "des-personal-site") {
                 id
                 url
+                stargazerCount
               }
             }
           }
@@ -60,8 +61,7 @@ export default function Footer() {
         <p className="footer-text">
           Designed & Built By Desmond Gilmour
           <br />
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-solid fa-code-branch"></i>
+          <i class="fa-regular fa-star"></i> {personalSite.stargazerCount}
         </p>
       </a>
     );
@@ -73,3 +73,6 @@ export default function Footer() {
     </div>
   );
 }
+
+
+//<i class="fa-solid fa-code-branch"></i>

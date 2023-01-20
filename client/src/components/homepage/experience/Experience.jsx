@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import moment from "moment";
 
 import "./experience.css";
 
@@ -106,7 +104,7 @@ export default function Experience() {
   };
 
   return (
-    <div className="experience" id="experience-anchor">
+    <div className="experience" id="Experience-anchor">
       <h2 className="numbered-heading">Where I’ve Worked</h2>
       <Box
         sx={{

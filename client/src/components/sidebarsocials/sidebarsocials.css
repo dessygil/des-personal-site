@@ -1,4 +1,4 @@
-.sideBarSocials {
+.side-bar-socials {
     margin-left: 25px;
     position: fixed;
     width: 60px;
@@ -13,7 +13,7 @@
     display:inline-block;
 }
 
-.socialIcon {
+.social-icon {
     font-size: 32px;
     margin-bottom: 5px;
     display:inline-block;
@@ -21,7 +21,7 @@
     text-decoration: none;
     color: black;
 }
-.socialIcon:hover{
+.social-icon:hover{
     transform: translateY(-3px);
     color: rgb(59, 96, 165);
 }

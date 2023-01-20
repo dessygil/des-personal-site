@@ -38,11 +38,11 @@
   background-color: rgba(59, 96, 165, 0.4);
 }
 
-.topRight {
+.top-right {
   flex: 3;
 }
 
-.topList {
+.top-list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -51,7 +51,7 @@
   list-style: none;
 }
 
-.topListItems {
+.top-list-items {
   margin-right: 40px;
   font-size: 14px;
   font-weight: 500;
@@ -69,7 +69,7 @@
 }
 
 
-.topListItemsResume {
+.top-list-items-resume {
   margin-right: 40px;
   font-size: 18px;
   font-weight: 500;
@@ -80,7 +80,7 @@
   border-radius: 10%;
 }
 
-.topListItemsResume:hover {
+.top-list-items-resume:hover {
   background-color: rgba(59, 96, 165, 0.6);
   outline: none;
   text-decoration: none;

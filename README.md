@@ -1,3 +1,15 @@
+# Hi! Thanks for viewing my personal site
+
+I'm sure if you are checking out the code you are curious to understand who I am as a developer. If you made it this far you might already know that I have a chemistry and sales background which first provides me with top tier communication and research skills which translate extremely well into a software development position.
+
+I aspire to be a full stack engineer and would love to talk to you about opportunities you may have. The best way to reach me is through my emails desmondgilmour@gmail.com
+
+This project uses technology like dotenv, typescript, tailwind, mongoose, MongoDB, express, nodemon, Github GraphQL API, DevTO API and axios.
+
+This project's frontend is hosted on Netlify and the backend is hosted on Heroku
+
+The below documentation was added when this folder was created...
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -70,41 +82,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-
-for the API I downloaded mongoose, dotenv, multer, express, nodemon
-
-git subtree push --prefix api heroku master to push any backend changes to the github repository 
-
-
 #THINGS LEFT TO DO NOW
 
 - make the full card be the link
 - make site https
-- fix all npm high severity errors
  make apollo better
-- fix the way when clicking on experience the way it moves
-- clear warnings
 - start using j unit cypress or whatever else
   
 
 #THINGS LEFT TO DO LATER
-- make all css consistent naming style
 - have button to bring to blog page at home page
 - top list resume could be better put together the a tag inside the div have the exact same 
 - website can be pulled from github so I can add a link to github projects that are being hosted
-- find way to make css more global (buttons and margin top between sections on home page)
+- find way to make css more global (buttons and margin top between sections on home page) (tailwind so I can start removing Css files)
 - add date created to posts and projects and maybe an image for the blog posts
 - start a new branch to change it to typescript
-- add URL option to jump to next page
 - look at last personal website you have seen.
 - pick color scheme and fix my picture
-- work on Readme for this site.
-- work on tags for this
 - add more flare to the website
 - add a loader before your site appears
 - add tailwind and animations
-- create a way to update delete and create in postman
-- commit to heroku to get everything working again
 - add some adds on the left hand side
-- add redux somehow
+
+- map top bar to make it more reusbale
+
   
