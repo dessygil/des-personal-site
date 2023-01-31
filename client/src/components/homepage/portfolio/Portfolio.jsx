@@ -48,6 +48,7 @@ export default function Portfolio() {
                       name
                       createdAt
                       description
+                      homepageUrl
                       repositoryTopics(last: 10) {
                         edges {
                           node {
@@ -71,6 +72,7 @@ export default function Portfolio() {
         setPinnedItems(
           response.data.user.pinnedItems.edges.map(({ node }) => node)
         );
+        
       });
   }, []);
 
@@ -85,6 +87,7 @@ export default function Portfolio() {
       <div className="card main-cards" style={{ width: "18rem" }}>
         <div className="card-head">
           <i className="fa-light fa-folder"></i>
+          {node.homepageUrl  && <i class="fa-solid fa-up-right-from-square"></i>}
           <a className="card-link" href={node.url} key={node.id}>
             <i className="fa-brands fa-github"></i>{" "}
           </a>
