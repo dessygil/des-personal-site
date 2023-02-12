@@ -45,6 +45,7 @@ export default function Footer() {
                 id
                 url
                 stargazerCount
+                updatedAt
               }
             }
           }
@@ -60,7 +61,9 @@ export default function Footer() {
       <a className="footer-link" href={personalSite.url}>
         <p className="footer-text">
           Designed & Built By Desmond Gilmour
-          <br />
+          <br/>
+          Wesbite Last Update: {personalSite.updatedAt.slice(0,10)}
+          <br/>
           <i class="fa-regular fa-star"></i> {personalSite.stargazerCount}
         </p>
       </a>

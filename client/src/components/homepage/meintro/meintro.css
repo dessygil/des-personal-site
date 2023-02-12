@@ -21,17 +21,16 @@
     max-width: 540px;
 }
 
-.four {
+.four-button{
     display: inline-block;
     margin-top: 40px;
+}
+
+.four {
     text-decoration: none;
     font-size: 18px;
     font-weight: 300;
     color: black;
-    cursor: pointer;
-    padding: 15px;
-    border: solid black;
-    border-radius: 10%;
 }
 
 .four:hover {

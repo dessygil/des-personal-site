@@ -73,18 +73,7 @@
   margin-right: 40px;
   font-size: 18px;
   font-weight: 500;
-  cursor: pointer;
-  box-sizing: border-box;
   padding: 8px;
-  border: solid black;
-  border-radius: 10%;
-}
-
-.top-list-items-resume:hover {
-  background-color: rgba(59, 96, 165, 0.6);
-  outline: none;
-  text-decoration: none;
-  color: black;
 }
 
 .top-list-resume-a-tag {
@@ -93,6 +82,16 @@
 }
 
 .top-list-resume-a-tag:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.no-features{
+  text-decoration: none;
+  color: black;
+}
+
+.no-features:hover{
   text-decoration: none;
   color: black;
 }

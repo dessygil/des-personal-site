@@ -14,9 +14,11 @@ export default function MeIntro() {
   );
 
   const four = (
-    <a className="four" href="mailto: desmondgilmour@gmail.com">
-      Contact me!
-    </a>
+    <button class="button-56 four-button" role="button">
+      <a className="four" href="mailto: desmondgilmour@gmail.com">
+        Contact me!
+      </a>
+    </button>
   );
 
   const items = [one, two, three, four];

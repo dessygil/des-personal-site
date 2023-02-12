@@ -4,7 +4,6 @@ import "./topbar.css";
 import resume from "./DesmondGilmourResume.pdf";
 
 export default function TopBar() {
-
   return (
     <div className="top">
       <a className="home-page-logo-link" href="/">
@@ -33,9 +32,16 @@ export default function TopBar() {
             </a>
           </li>
           <li className="top-list-items-resume">
-            <a className="top-list-resume-a-tag" href={resume} download>
-              Resume
-            </a>
+            <button class="button-56" role="button">
+              <a
+                className="no-features"
+                href={resume}
+                download="DesmondGilmourResume.pdf"
+                role="to-download-pdf"
+              >
+                Resume
+              </a>
+            </button>
           </li>
         </ul>
       </div>

@@ -6,12 +6,12 @@ import headshot from "./headshot.jpg";
 
 export default function About() {
   const skills = [
-    "JavaScript (ES6+)",
-    "Node.js",
-    "React",
-    "Python",
+    "Pytorch",
     "Django",
-    "Java",
+    "RDKit",
+    "DeepChem",
+    "Numpy/Pandas",
+    "React",
   ];
 
   return (
@@ -21,21 +21,21 @@ export default function About() {
         <div className="left-side">
           <div className="blurb">
             <p className="main-paragraph">
-              Hello, my name is Desmond Gilmour and I'm an aspiring software
-              engineer. My love for programming began when I decided to try a
-              beginner python course in the summer of my chemistry degree
-              because I noticed a trend that ALL biotech companies implement a
-              platform for drug discovery. Immediately I knew software
-              engineering was for me and as soon as next semester rolled around
-              I enrolled a double major of computer science and chemistry.
+              Hello, my name is Desmond Gilmour and I'm a software engineer at
+              the intersection of chemistry and computer science. My love for
+              programming began when I decided to try a beginner python course
+              in the summer of my chemistry degree because I noticed a trend
+              that ALL biotech companies implement a platform for drug
+              discovery. Immediately I knew software engineering was for me and
+              as soon as next semester rolled around I enrolled a double major
+              of computer science and chemistry.
             </p>
             <br></br>
             <p className="main-paragraph">
-              Fast forward, I fell into sales as most people do at some point in
-              their life, but I have always kept on working on side projects and
-              taking side courses. I am excited to start this adventure and
-              bring the many skills; hard and soft that I have gained through my
-              different stages in my life.
+              Fast forward, I now have developed a clear passion for lab
+              automation and AI for material/drug discovery as it allows
+              research scientists to increase reproducibility and the pace of
+              innovations.
             </p>
             <br></br>
             <p className="main-paragraph">
