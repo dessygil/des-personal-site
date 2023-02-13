@@ -16,6 +16,7 @@ export default function BlogIntro() {
       })
       .then((json) => {
         setRecentPosts(json);
+        console.log(json);
       })
       .catch((error) => {
         console.log(error);
@@ -28,21 +29,26 @@ export default function BlogIntro() {
       .map((node) => <li className="topic">{node}</li>);
   };
 
+
   const renderBlogPosts = () => {
     return recentPosts.slice(0, 6).map((node) => (
       <div className="card main-cards" style={{ width: "18rem" }}>
-        <div className="card-head"></div>
-
         <div className="card-body">
-          <a className="" href={node.url}>
-            <h5 className="card-title my-card-title" key={node.id}>
-              {node.title}
-            </h5>
-          </a>
+          <p className="date-posted">{node.created_at.slice(0,10)}</p>
+          <h5 className="card-title my-card-title" key={node.id}>
+            {node.title}
+          </h5>
           <p className="card-text my-card-text" key={node.id}>
             {node.description}
           </p>
           <ul className="topics">{renderBlogTopics(node)}</ul>
+          <div className="button-container">
+            <button className="button-56">
+              <a className="no-features" href={node.url}>
+                Read more!
+              </a>
+            </button>
+          </div>
         </div>
       </div>
     ));

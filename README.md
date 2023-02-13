@@ -103,7 +103,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - add a loader before your site appears
 - add tailwind and animations
 - add some adds on the left hand side
-
-- map top bar to make it more reusbale
+- change the bottom contact to emailjs and make it a form
+- change the color of the topics to make them stand out more
+- better position link button on homepage with adding a link any relevant sites
 
   

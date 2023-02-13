@@ -59,7 +59,7 @@
     -webkit-line-clamp: 2; /* number of lines to show */
            line-clamp: 2;
    -webkit-box-orient: vertical;
-   color: rgb(107, 107, 107)
+   color: rgb(0, 0, 0)
 }
 
 
@@ -68,7 +68,7 @@
     flex-direction: row;
     justify-content: flex-start;
     list-style: none;
-    margin: 0 0 1rem 0;
+    margin: 1rem 0 1rem 0;
     padding: 0;
     font-size: 14px;
     color: rgb(107, 107, 107);
@@ -77,4 +77,15 @@
 .topics :not(:last-child){
     margin-right: 10px;
     
+}
+
+.date-posted{
+    margin: 0 0 0.5rem 0;
+    color: #999;
+    font-size: 1.25rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
 }
