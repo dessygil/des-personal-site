@@ -106,5 +106,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - change the bottom contact to emailjs and make it a form
 - change the color of the topics to make them stand out more
 - better position link button on homepage with adding a link any relevant sites
-
+- make the colors consistent with the CSS
+- add emailjs
+- consider next js
   

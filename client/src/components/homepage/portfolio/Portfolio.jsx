@@ -49,6 +49,9 @@ export default function Portfolio() {
                       createdAt
                       description
                       homepageUrl
+                      stargazerCount
+                      url
+                      updatedAt
                       repositoryTopics(last: 10) {
                         edges {
                           node {
@@ -58,8 +61,6 @@ export default function Portfolio() {
                           }
                         }
                       }
-                      stargazerCount
-                      url
                     }
                   }
                 }
@@ -72,7 +73,6 @@ export default function Portfolio() {
         setPinnedItems(
           response.data.user.pinnedItems.edges.map(({ node }) => node)
         );
-        
       });
   }, []);
 
@@ -86,14 +86,24 @@ export default function Portfolio() {
     return pinnedItems.map((node) => (
       <div className="card main-cards" style={{ width: "18rem" }}>
         <div className="card-head">
-          <i className="fa-light fa-folder"></i>
-          {node.homepageUrl  && <i class="fa-solid fa-up-right-from-square"></i>}
-          <a className="card-link" href={node.url} key={node.id}>
-            <i className="fa-brands fa-github"></i>{" "}
-          </a>
+          <div className="folder">
+            <i className="fa fa-folder"></i>
+          </div>
+          
+          <div className="links-from-github">
+            {node.homepageUrl && 
+              <a className="card-link" href={node.homepageUrl} key={node.id}>
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            }
+            <a className="card-link" href={node.url} key={node.id}>
+              <i className="fa-brands fa-github"></i>{" "}
+            </a>
+          </div>
         </div>
-
+          
         <div className="card-body">
+          <p className="date-updated">Updated: {node.updatedAt.slice(0,10)}</p>
           <h5 className="card-title my-card-title" key={node.id}>
             {node.name}
           </h5>

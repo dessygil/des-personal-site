@@ -34,7 +34,7 @@ export default function BlogIntro() {
     return recentPosts.slice(0, 6).map((node) => (
       <div className="card main-cards" style={{ width: "18rem" }}>
         <div className="card-body">
-          <p className="date-posted">{node.created_at.slice(0,10)}</p>
+          <p className="date-posted">Posted: {node.created_at.slice(0,10)}</p>
           <h5 className="card-title my-card-title" key={node.id}>
             {node.title}
           </h5>
