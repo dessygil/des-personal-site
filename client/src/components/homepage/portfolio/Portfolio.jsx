@@ -103,7 +103,7 @@ export default function Portfolio() {
         </div>
           
         <div className="card-body">
-          <p className="date-updated">Updated: {node.updatedAt.slice(0,10)}</p>
+          <p className="date-updated">Last updated: {node.updatedAt.slice(0,10)}</p>
           <h5 className="card-title my-card-title" key={node.id}>
             {node.name}
           </h5>
