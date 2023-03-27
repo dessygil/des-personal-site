@@ -23,5 +23,5 @@
 }
 .social-icon:hover{
     transform: translateY(-3px);
-    color: rgb(59, 96, 165);
+    color: var(--standard-color);
 }

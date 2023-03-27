@@ -86,11 +86,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - make the full card be the link
 - make site https
- make apollo better
+- make apollo better
 - start using j unit cypress or whatever else
   
 
 #THINGS LEFT TO DO LATER
+
 - have button to bring to blog page at home page
 - top list resume could be better put together the a tag inside the div have the exact same 
 - website can be pulled from github so I can add a link to github projects that are being hosted
@@ -105,8 +106,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - add some adds on the left hand side
 - change the bottom contact to emailjs and make it a form
 - change the color of the topics to make them stand out more
-- better position link button on homepage with adding a link any relevant sites
-- make the colors consistent with the CSS
 - add emailjs
-- consider next js
+- build better documentation
   

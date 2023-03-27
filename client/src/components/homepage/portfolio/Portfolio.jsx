@@ -92,11 +92,11 @@ export default function Portfolio() {
           
           <div className="links-from-github">
             {node.homepageUrl && 
-              <a className="card-link" href={node.homepageUrl} key={node.id}>
+              <a className="a-tag-no-features" href={node.homepageUrl} key={node.id}>
                 <i class="fa-solid fa-up-right-from-square"></i>
               </a>
             }
-            <a className="card-link" href={node.url} key={node.id}>
+            <a className="a-tag-no-features" href={node.url} key={node.id}>
               <i className="fa-brands fa-github"></i>{" "}
             </a>
           </div>
@@ -118,7 +118,7 @@ export default function Portfolio() {
 
   return (
     <div id="Portfolio-anchor" className="portfolio">
-      <h2 className="numbered-heading">Portfolio</h2>
+      <h2 className="numbered-heading"><a className="a-tag-no-features" href="https://github.com/dessygil">Portfolio</a></h2>
       <div className="repos">
         {pinnedItems.length ? renderPinnedItems() : <p>Loading...</p>}
       </div>

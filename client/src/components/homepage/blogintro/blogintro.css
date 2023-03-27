@@ -12,15 +12,6 @@
     margin-right:  15px;
 }
 
-.card-link{
-    color: black;
-    text-decoration: none;
-}
-
-.card-link:hover{
-    color: rgb(59, 96, 165);
-}
-
 .main-cards{
     flex: 0 0 320px;
     margin-bottom: 15px;
@@ -88,4 +79,8 @@
 .button-container{
     display: flex;
     justify-content: center;
+}
+
+.blog-subheader:hover{
+    color: var(--standard-color);
 }

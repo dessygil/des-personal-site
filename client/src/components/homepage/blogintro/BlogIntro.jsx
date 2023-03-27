@@ -56,7 +56,7 @@ export default function BlogIntro() {
 
   return (
     <div id="Blog-anchor" className="blog-intro">
-      <h2 className="numbered-heading"></h2>
+      <h2 className="numbered-heading"><a className="a-tag-no-features" href="https://dev.to/dessygil">Blog Posts</a></h2>
       <div className="blog-posts">
         {recentPosts.length ? renderBlogPosts() : <p>Loading...</p>}
       </div>

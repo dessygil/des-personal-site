@@ -10,5 +10,5 @@
 
 .footer-link:hover{
     text-decoration: none;
-    color: rgb(59, 96, 165);
+    color: var(--standard-color);
 }

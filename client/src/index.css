@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* naming the colors I will be using throughout*/
+:root{
+  --standard-color: rgb(134, 172, 243);
+}
+
 .full-page-structure {
   display: flex;
   font-family: "Roboto", sans-serif;
@@ -26,7 +31,7 @@
 /* CSS */
 .button-56 {
   align-items: center;
-  background-color: rgb(134, 172, 243);
+  background-color: var(--standard-color);
   border: 2px solid #111;
   border-radius: 8px;
   box-sizing: border-box;
@@ -68,7 +73,7 @@
 }
 
 .button-56:active {
-  background-color: rgb(147, 180, 241);
+  background-color: var(--standard-color);
   outline: 0;
 }
 
@@ -80,4 +85,14 @@
   .button-56 {
     padding: 0 40px;
   }
+}
+
+.a-tag-no-features{
+  color: black;
+  text-decoration: none;
+}
+
+.a-tag-no-features:hover{
+  text-decoration: none;
+  color: var(--standard-color);
 }
