@@ -7,9 +7,9 @@ export default function MeIntro() {
   const two = <h1 className="two">Desmond Gilmour.</h1>;
   const three = (
     <p className="three">
-      I'm an aspiring software engineer that will specialize on the backend.
-      Currently I am focused on learning all the world has to offer and
-      continuing to build out my personal website.
+      I'm a research software engineer interested in combining my computer 
+      science and chemistry background to help bring drugs to market faster 
+      using AI/ML for drug discovery and lab automation. 
     </p>
   );
 
