@@ -70,8 +70,8 @@ export default function TopBar() {
   }, []);
   
   return (
-    <div className="top">
-      <a className="home-page-logo-link" href="/">
+    <navbar className="top box-shadow">
+      <a className="home-page-logo-link " href="/">
         <h2 className="site-logo">DG</h2>
       </a>
       <div className="top-right">
@@ -110,11 +110,6 @@ export default function TopBar() {
           </li>
         </ul>
       </div>
-    </div>
+    </navbar>
   );
 }
-/*
-
-<li className="topListItems">
-            <a className="top-list-item-tag" href="#experience-anchor">Experience</a>
-          </li> */
