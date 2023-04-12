@@ -1,0 +1,43 @@
+.contact-me{
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.contact-me-title{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.paragraph-container{
+    margin: 0 auto;
+}
+
+.contact-me-paragraph{
+    width: 40rem;
+}
+
+.button-container{
+    
+}
+
+.button_center_and_margin{
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.contact-me-email-button{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    padding: 15px;
+    width: 12rem;
+}
+
+.contact-me-email-button:hover {
+    outline: none;
+    text-decoration: none;
+    color: black;
+  }

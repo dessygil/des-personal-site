@@ -1,0 +1,41 @@
+.meIntro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Roboto", sans-serif;
+}
+
+.meIntro-container > * {
+    margin:10px 0 10px 0;
+}
+
+.one {
+    margin-top: 100px;
+}
+
+.two {
+    font-size: 5em;
+}
+
+.three {
+    max-width: 540px;
+}
+
+.four-button{
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.four {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+}
+
+.four:hover {
+    background-color: rgba(59, 96, 165, 0.6);
+    outline: none;
+    text-decoration: none;
+    color: black;
+}

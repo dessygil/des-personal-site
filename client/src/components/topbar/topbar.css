@@ -1,0 +1,96 @@
+.top {
+  width: 100%;
+  height: 130px;
+  background-color: rgb(250, 250, 250);
+  top: 0;
+  display: flex;
+  position: sticky;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  z-index: 10;
+}
+
+.topLeft {
+  flex: 4;
+}
+
+.home-page-logo-link{
+  text-decoration: None;
+  color: rgb(59, 96, 165);
+}
+
+.home-page-logo-link:hover{
+  text-decoration: None;
+}
+
+.site-logo {
+  border: solid black 2px;
+  margin-top: 30px;
+  margin-left: 25px;
+  padding: 10px;
+  border-radius: 10%;
+  color: black;
+  transition: background-color 1s ease;
+}
+
+.site-logo:hover {
+  background-color: var(--standard-color-dark);
+}
+
+.top-right {
+  flex: 3;
+}
+
+.top-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 45px;
+  padding: 0;
+  list-style: none;
+}
+
+.top-list-items {
+  margin-right: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.top-list-item-tag{
+  text-decoration: none;
+  color: black;
+}
+
+.top-list-item-tag:hover{
+  text-decoration: none;
+  color: rgb(59, 96, 165);
+}
+
+
+.top-list-items-resume {
+  margin-right: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px;
+}
+
+.top-list-resume-a-tag {
+  text-decoration: none;
+  color: black;
+}
+
+.top-list-resume-a-tag:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.no-features{
+  text-decoration: none;
+  color: black;
+}
+
+.no-features:hover{
+  text-decoration: none;
+  color: black;
+}
