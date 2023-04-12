@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -33,21 +33,51 @@ TabPanel.propTypes = {
 };
 
 export default function Experience() {
-  const [activeTab, setActiveTab] = React.useState(0);
-  const [jobs, setJobs] = useState([]);
+  const [activeTab, setActiveTab] = useState(0);
 
   const handleChange = (event, newValue) => {
     setActiveTab(newValue);
   };
 
-  useEffect(() => {
-    const getJobs = async () => {
-      const res = await fetch("https://des-personal-site.herokuapp.com/", {mode:'cors'})
-      const jobs = await res.json();
-      setJobs(jobs)
-    };
-    getJobs();
-  }, []);
+  const jobs = [
+    {
+      title: "Sales Development Representative",
+      company: "Patsnap",
+      url: "https://www.patsnap.com/",
+      startDate: new Date("2021-12-08T14:56:59.301+00:00") ,
+      endDate: null,
+      duties: [
+        "Used cold outreach techniques to generate the highest amount of leads in Q3 (23) and the third highest revenue in Q2 (\$54,000) and Q3 (\$57,000).",
+        "Successfully onboarded three new team members, two exceeding their sales target.",
+        "Perfected communication skills through over 25,000 cold calls.",
+      ],
+    },
+    {
+      title: "NSERC Undergraduate Research Assistant",
+      company: "University Of Guelph",
+      url: "https://www.uoguelph.ca/",
+      startDate: new Date("2019-05-01T14:56:59.301+00:00"),
+      endDate: new Date("2019-09-01T14:56:59.301+00:00"),
+      duties: [
+        "Synthesized a protected disaccharide acceptor (Lewis Y) ready for glycosylation.",
+        "Characterized all compounds using 1D NMR, 2D NMR, Mass Spectrometry, and IR Spectroscopy.",
+        "Presented synthetic scheme at CEPS undergraduate poster session of approximately 30 students.",
+      ],
+    },
+    {
+      title: "Teaching Assistant",
+      company: "University Of Guelph",
+      url: "https://www.uoguelph.ca/",
+      startDate: new Date("2019-01-01T14:56:59.301+00:00"),
+      endDate: new Date("2019-09-01T14:56:59.301+00:00"),
+      duties: [
+        "Taught first-year chemistry W20 and only undergraduate to teach second-year orgo S20.",
+        "Managed the education of 60+ students per semester in person and through zoom lessons.",
+        "Taught students ChemDraw to communicate remotely and Gaussian to teach organic chemistry concepts throughout the lockdown.",
+        "Received a TA rating of 4.8/5.0."
+      ],
+    },
+  ]
 
   const renderTabPanel = () => {
     return (
