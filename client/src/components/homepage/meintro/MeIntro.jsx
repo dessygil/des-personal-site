@@ -14,7 +14,7 @@ export default function MeIntro() {
   );
 
   const four = (
-    <button class="button-56 four-button" role="button">
+    <button className="button-56 four-button" role="button">
       <a className="four" href="mailto: desmondgilmour@gmail.com">
         Contact me!
       </a>

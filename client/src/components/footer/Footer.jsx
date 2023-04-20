@@ -64,7 +64,7 @@ export default function Footer() {
           <br/>
           Wesbite Last Update: {personalSite.updatedAt.slice(0,10)}
           <br/>
-          <i class="fa-regular fa-star"></i> {personalSite.stargazerCount}
+          <i className="fa-regular fa-star"></i> {personalSite.stargazerCount}
         </p>
       </a>
     );
@@ -76,6 +76,3 @@ export default function Footer() {
     </div>
   );
 }
-
-
-//<i class="fa-solid fa-code-branch"></i>

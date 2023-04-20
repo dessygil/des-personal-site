@@ -102,7 +102,7 @@ export default function Experience() {
         </p>
         <ul className="duties-list">
           {jobs[activeTab].duties.map((node, i) => {
-            return <li key={i} className="duties">{node}</li>
+            return <li key={node} className="duties">{node}</li>
           })}
         </ul>    
       </>
@@ -153,7 +153,7 @@ export default function Experience() {
         >
           {jobs.length ? (
             jobs.map((node, i) => {
-              return <Tab label={node.company} />;
+              return <Tab key={node.startDate} label={node.company} />;
             })
           ) : (
             <p> Loading</p>
@@ -164,84 +164,3 @@ export default function Experience() {
     </div>
   );
 }
-
-/*
-
-export default function Experience() {
-
-  const [jobs, setJobs] = useState([]);
-
-  useEffect(() => {
-    const getJobs = async () => {
-      const res = await axios.get("/jobs/");
-      setJobs(res.data);
-      
-    };
-    getJobs();
-  }, []);
-
-  return (
-    <div id="experience-anchor">
-      <h2 className="numbered-heading">Where I’ve Worked</h2>
-      <div className="inner">
-        <div className="tab-list">
-          {jobs && jobs.map(({node}, i) => {
-            
-            
-            return (
-              <p>
-
-              </p>
-            )
-          })}
-        </div>
-        <div className="tab-panels">
-          
-        </div>
-      </div>
-    </div>
-  )
-}
-
-
- <TabPanel value={} index={0}>
-          Item One
-        </TabPanel>
-        <TabPanel value={} index={1}>
-          Item Two
-        </TabPanel>
-        <TabPanel value={} index={2}>
-          Item Three
-        </TabPanel>
-*/
-/*
-<Box
-        sx={{
-          flexGrow: 1,
-          bgcolor: "background.paper",
-          display: "flex",
-          height: 224,
-        }}
-      >
-        <Tabs
-          orientation="vertical"
-          variant="scrollable"
-          value={activeTab}
-          onChange={handleChange}
-          sx={{ borderRight: 1, borderColor: "divider" }}
-        >
-          {jobs.length 
-            ?  
-              jobs.map((node, i) => {
-                <p>I am here</p>
-              }) 
-            : 
-              <p> Loading</p>
-          }
-          <Tab label="Item One" />
-          <Tab label="Item Two" />
-          <Tab label="Item Three" />
-        </Tabs>
-      </Box>
-    </div>
-    */

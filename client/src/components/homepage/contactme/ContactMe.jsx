@@ -13,7 +13,7 @@ export default function ContactMe() {
         </p>
       </div>
       <div className="button-container">
-        <button class="button-56 button_center_and_margin" role="button">
+        <button className="button-56 button_center_and_margin" role="button">
           <a
             className="contact-me-email-button global-button"
             href="mailto: desmondgilmour@gmail.com"

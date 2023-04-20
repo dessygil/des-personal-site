@@ -70,7 +70,7 @@ export default function TopBar() {
   }, []);
   
   return (
-    <navbar className="top box-shadow">
+    <div className="top box-shadow">
       <a className="home-page-logo-link " href="/">
         <h2 className="site-logo">DG</h2>
       </a>
@@ -110,6 +110,6 @@ export default function TopBar() {
           </li>
         </ul>
       </div>
-    </navbar>
+    </div>
   );
 }

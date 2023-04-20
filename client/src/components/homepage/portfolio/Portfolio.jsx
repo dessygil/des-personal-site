@@ -93,7 +93,7 @@ export default function Portfolio() {
           <div className="links-from-github">
             {node.homepageUrl && 
               <a className="a-tag-no-features" href={node.homepageUrl} key={node.id}>
-                <i class="fa-solid fa-up-right-from-square"></i>
+                <i className="fa-solid fa-up-right-from-square"></i>
               </a>
             }
             <a className="a-tag-no-features" href={node.url} key={node.id}>
