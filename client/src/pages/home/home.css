@@ -4,6 +4,13 @@
   counter-reset: homePageCounter;
 }
 
+.main-page-molecule-opener {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 40px;
+}
+
 .numbered-heading {
   display: flex;
   align-items: center;

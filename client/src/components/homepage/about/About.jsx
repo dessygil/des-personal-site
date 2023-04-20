@@ -46,7 +46,7 @@ export default function About() {
           <ul className="skills-list">
             {skills &&
               skills.map((skill, i) => (
-                <li className="skills-list-item" key={i}>
+                <li className="skills-list-item" key={skill}>
                   {skill}
                 </li>
               ))}

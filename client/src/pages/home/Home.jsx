@@ -7,13 +7,16 @@ import Experience from "../../components/homepage/experience/Experience";
 import Portfolio from "../../components/homepage/portfolio/Portfolio";
 import BlogIntro from "../../components/homepage/blogintro/BlogIntro";
 import ContactMe from "../../components/homepage/contactme/ContactMe";
-
+import Molecule from "../../components/homepage/molecule/Molecule";
 
 export default function Home() {
 
   return (
       <div className="main-page">
-        <MeIntro />
+        <div className="main-page-molecule-opener">
+          <MeIntro />
+          <Molecule />
+        </div>
         <About />
         <Experience />
         <Portfolio />
