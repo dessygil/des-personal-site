@@ -92,6 +92,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 #THINGS LEFT TO DO LATER
 
+- get rid of heroku and make a static site
+
 - have button to bring to blog page at home page
 - top list resume could be better put together the a tag inside the div have the exact same 
 - website can be pulled from github so I can add a link to github projects that are being hosted
@@ -108,4 +110,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - change the color of the topics to make them stand out more
 - add emailjs
 - build better documentation
+- make items ease in and out 
+- change the read more in blog post to resemble the projects with a link at the top
+- update the job descriptions with the better one I have made
+- molecules psinning with be my loading page
   
