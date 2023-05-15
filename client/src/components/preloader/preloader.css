@@ -1,0 +1,6 @@
+.preloader-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(27, 55, 83);;
+}
