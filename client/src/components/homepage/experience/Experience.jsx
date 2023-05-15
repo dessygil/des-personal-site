@@ -41,11 +41,23 @@ export default function Experience() {
 
   const jobs = [
     {
+      title: "Software Developer",
+      company: "Self Employed",
+      url: "http://desmondgilmour.com/",
+      startDate: new Date("2023-03-01T14:56:59.301+00:00"),
+      endDate: null,
+      duties: [
+        "Improved the molecule visualization capabilities of an open-source library: Datamol by developing a lasso highlighting",
+        "Integrated the MolT5 AI model from Hugging Face into the Molfeat open-source library, enabling advanced molecular analysis capabilities on more than 750 million purchasable compounds available in the ZINC database",
+        "Addressed bond-order and atom query-related challenges in the RDKit Python library, contributing to its open-source development and resolving critical issues",
+      ],
+    },
+    {
       title: "Sales Development Representative",
       company: "Patsnap",
       url: "https://www.patsnap.com/",
       startDate: new Date("2021-12-08T14:56:59.301+00:00") ,
-      endDate: null,
+      endDate: new Date("2023-03-01T14:56:59.301+00:00"),
       duties: [
         "Used cold outreach techniques to generate the highest amount of leads in Q3 (23) and the third highest revenue in Q2 (\$54,000) and Q3 (\$57,000).",
         "Successfully onboarded three new team members, two exceeding their sales target.",
@@ -62,19 +74,6 @@ export default function Experience() {
         "Synthesized a protected disaccharide acceptor (Lewis Y) ready for glycosylation.",
         "Characterized all compounds using 1D NMR, 2D NMR, Mass Spectrometry, and IR Spectroscopy.",
         "Presented synthetic scheme at CEPS undergraduate poster session of approximately 30 students.",
-      ],
-    },
-    {
-      title: "Teaching Assistant",
-      company: "University Of Guelph",
-      url: "https://www.uoguelph.ca/",
-      startDate: new Date("2019-01-01T14:56:59.301+00:00"),
-      endDate: new Date("2019-09-01T14:56:59.301+00:00"),
-      duties: [
-        "Taught first-year chemistry W20 and only undergraduate to teach second-year orgo S20.",
-        "Managed the education of 60+ students per semester in person and through zoom lessons.",
-        "Taught students ChemDraw to communicate remotely and Gaussian to teach organic chemistry concepts throughout the lockdown.",
-        "Received a TA rating of 4.8/5.0."
       ],
     },
   ]

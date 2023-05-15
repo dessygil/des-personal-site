@@ -63,12 +63,3 @@ export default function BlogIntro() {
     </div>
   );
 }
-
-/* useEffect(() => {
-  const getPost = async () => {
-    const res = await axios.get("/sixrecent");
-    setRecentPosts(res.data);
-  };
-  getPost();
-}, []);
-*/

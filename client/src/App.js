@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import TopBar from "./components/topbar/TopBar";
@@ -6,11 +6,23 @@ import SideBarSocials from "./components/sidebarsocials/SideBarSocials";
 import Footer from "./components/footer/Footer";
 import Home from './pages/home/Home';
 import NotFound from './pages/notfound/NotFound'
+import Preloader from './components/preloader/Preloader';
 
 import "./index.css";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  React.useEffect(() =>{
+    setTimeout(() => setLoading(true), 2750);
+  })
+
   return (
+    <>
+    {!loading ? (
+      <Preloader />
+    ) : (
+    <>
     <div className="body">
       <div>
         < TopBar />
@@ -33,7 +45,11 @@ function App() {
       <div className="footer">
         <Footer />
       </div>
-    </div>
+          </div>
+        </>
+
+        )}
+        </>
   );
 }
 export default App;
