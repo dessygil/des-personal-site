@@ -84,7 +84,7 @@ export default function Portfolio() {
 
   const renderPinnedItems = () => {
     return pinnedItems.map((node) => (
-      <div className="card main-cards" style={{ width: "18rem" }}>
+      <div className="card main-cards shadow" style={{ width: "18rem" }}>
         <div className="card-head">
           <div className="folder">
             <i className="fa fa-folder"></i>
@@ -101,17 +101,18 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
-          
-        <div className="card-body">
-          <p className="date-updated">Last updated: {node.updatedAt.slice(0,10)}</p>
-          <h5 className="card-title my-card-title" key={node.id}>
-            {node.name}
-          </h5>
-          <p className="card-text my-card-text" key={node.id}>
-            {node.description}
-          </p>
-          <ul className="topics">{renderRepoTopics(node)}</ul>
-        </div>
+        <a className="a-tag-no-features" href={node.url} key={node.id}>
+          <div className="card-body">
+            <p className="date-updated">Last updated: {node.updatedAt.slice(0,10)}</p>
+            <h5 className="card-title my-card-title" key={node.id}>
+              {node.name}
+            </h5>
+            <p className="card-text my-card-text" key={node.id}>
+              {node.description}
+            </p>
+            <ul className="topics">{renderRepoTopics(node)}</ul>
+          </div>
+        </a>
       </div>
     ));
   };

@@ -7,9 +7,12 @@ export default function MeIntro() {
   const two = <h1 className="two">Desmond Gilmour.</h1>;
   const three = (
     <p className="three">
-      I'm a research software engineer interested in combining my computer 
-      science and chemistry background to help bring drugs to market faster 
-      using AI/ML for drug discovery and lab automation. 
+      
+      As a Research Software Engineer, I fuse my dual degrees in Computer Science and Chemistry
+      to deliver full-stack development with Django, Next.js/React, MySQL, and PostgreSQL. I've
+      harnessed this knowledge to predict PADI-4 enzyme's bioactivity with AI and am developing a
+      lab scheduling system. I also contribute to open-source cheminformatics projects like
+      datamol, RDKit, and Molfeat.
     </p>
   );
 

@@ -32,16 +32,18 @@ export default function BlogIntro() {
 
   const renderBlogPosts = () => {
     return recentPosts.slice(0, 6).map((node) => (
-      <div className="card main-cards" style={{ width: "18rem" }}>
+      <div className="card main-cards shadow" style={{ width: "18rem" }}>
         <div className="card-body">
-          <p className="date-posted">Posted: {node.created_at.slice(0,10)}</p>
-          <h5 className="card-title my-card-title" key={node.id}>
-            {node.title}
-          </h5>
-          <p className="card-text my-card-text" key={node.id}>
-            {node.description}
-          </p>
-          <ul className="topics">{renderBlogTopics(node)}</ul>
+          <p className="date-posted">Posted: {node.created_at.slice(0, 10)}</p>
+          <a className="a-tag-no-features" href={node.url} key={node.id}>
+            <h5 className="card-title my-card-title" key={node.id}>
+              {node.title}
+            </h5>
+            <p className="card-text my-card-text" key={node.id}>
+              {node.description}
+            </p>
+            <ul className="topics">{renderBlogTopics(node)}</ul>
+          </a>
           <div className="button-container">
             <button className="button-56">
               <a className="no-features" href={node.url}>
