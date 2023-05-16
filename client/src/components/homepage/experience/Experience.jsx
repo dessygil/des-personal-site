@@ -47,7 +47,7 @@ export default function Experience() {
       startDate: new Date("2023-03-01T14:56:59.301+00:00"),
       endDate: null,
       duties: [
-        "Improved the molecule visualization capabilities of an open-source library: Datamol by developing a lasso highlighting",
+        "Improved the molecule visualization capabilities of an open-source library: Datamol by developing a lasso highlighting feature",
         "Integrated the MolT5 AI model from Hugging Face into the Molfeat open-source library, enabling advanced molecular analysis capabilities on more than 750 million purchasable compounds available in the ZINC database",
         "Addressed bond-order and atom query-related challenges in the RDKit Python library, contributing to its open-source development and resolving critical issues",
       ],
