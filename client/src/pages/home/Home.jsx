@@ -15,7 +15,7 @@ export default function Home() {
       <div className="main-page">
         <div className="main-page-molecule-opener">
           <MeIntro />
-          <Molecule />
+          <Molecule className="molecule"/>
         </div>
         <About />
         <Experience />

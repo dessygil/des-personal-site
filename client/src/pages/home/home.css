@@ -4,6 +4,10 @@
   counter-reset: homePageCounter;
 }
 
+.molecule{
+  align-self: flex-start;
+}
+
 .main-page-molecule-opener {
   display: flex;
   flex-direction: row;
