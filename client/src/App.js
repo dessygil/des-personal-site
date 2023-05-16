@@ -14,7 +14,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   React.useEffect(() =>{
-    setTimeout(() => setLoading(true), 2750);
+    setTimeout(() => setLoading(true), 3000);
   })
 
   return (
