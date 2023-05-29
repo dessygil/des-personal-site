@@ -21,21 +21,19 @@ export default function About() {
         <div className="left-side">
           <div className="blurb">
             <p className="main-paragraph">
-              Hello, my name is Desmond Gilmour and I'm a software engineer at
-              the intersection of chemistry and computer science. My love for
-              programming began when I decided to try a beginner python course
-              in the summer of my chemistry degree because I noticed a trend
-              that ALL biotech companies implement a platform for drug
-              discovery. Immediately I knew software engineering was for me and
-              as soon as next semester rolled around I enrolled a double major
-              of computer science and chemistry.
+              As a sales professional with a dual degree in computer science and chemistry
+              (GPA: 3.6), I've honed my skills across various platforms, from launching Vintage
+              Academy, a vintage clothing business, to mastering patent-based software sales
+              as a Sales Development Representative at Patsnap. Alongside, my fluency in languages
+              such as Python, JavaScript, C/C++, and Java, and adeptness with tools like AWS,
+              Docker, Nginx, and Git, gives me a unique edge.
             </p>
             <br></br>
             <p className="main-paragraph">
-              Fast forward, I now have developed a clear passion for lab
-              automation and AI for material/drug discovery as it allows
-              research scientists to increase reproducibility and the pace of
-              innovations.
+              Blending this extensive sales experience with technical acumen, I'm optimally equipped
+              to thrive as a Sales Engineer in a SaaS environment, proficiently bridging the gap
+              between complex technical concepts and client-friendly dialogue. This distinctive
+              blend of skills positions me uniquely in the constantly evolving SaaS landscape.
             </p>
             <br></br>
             <p className="main-paragraph">
