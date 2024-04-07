@@ -9,9 +9,9 @@ export default function About() {
     "Pytorch",
     "Django",
     "RDKit",
-    "DeepChem",
-    "Numpy/Pandas",
-    "React",
+    "Datadog/Grafana",
+    "Next.js",
+    "AWS",
   ];
 
   return (
@@ -22,11 +22,13 @@ export default function About() {
           <div className="blurb">
             <p className="main-paragraph">
               As a sales professional with a dual degree in computer science and chemistry
-              (GPA: 3.6), I've honed my skills across various platforms, from launching Vintage
+              (GPA: 3.6), I've honed my skills across various roles, from launching Vintage
               Academy, a vintage clothing business, to mastering patent-based software sales
-              as a Sales Development Representative at Patsnap. Alongside, my fluency in languages
-              such as Python, JavaScript, C/C++, and Java, and adeptness with tools like AWS,
-              Docker, Nginx, and Git, gives me a unique edge.
+              as a Sales Development Representative at Patsnap and most recently sales development
+              at Nicoya selling a surface plasmon resonance device that leverages the unique
+              advantages of digital microfluidics. I continue to keep my technical skills sharp,
+              by building side project in languages such as Python, JavaScript, C/C++,
+              and Java, and gaining certifications with tools like AWS, Datadog, Kubernetes.
             </p>
             <br></br>
             <p className="main-paragraph">
@@ -63,3 +65,6 @@ export default function About() {
     </div>
   );
 }
+
+
+//Hello, my name is Desmond Gilmour and I'm a software engineer at the intersection of chemistry and computer science. My love for programming began when I decided to try a beginner python course in the summer of my chemistry degree because I noticed a trend that ALL biotech companies implement a platform for drug discovery. Immediately I knew software engineering was for me and as soon as next semester rolled around I enrolled a double major of computer science and chemistry.Fast forward, I now have developed a clear passion for lab automation and AI for material/drug discovery as it allows research scientists to increase reproducibility and the pace of innovations.
