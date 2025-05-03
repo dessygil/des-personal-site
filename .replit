@@ -13,7 +13,7 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd client && WATCHPACK_POLLING=true npm start"
+args = "cd client && npm start"
 
 [deployment]
 run = ["sh", "-c", "npx serve -s client/build -l 5000"]
