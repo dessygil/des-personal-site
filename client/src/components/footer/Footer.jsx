@@ -18,9 +18,13 @@ export default function Footer() {
     uri: baseUrl,
   });
 
-  const token = process.env.REACT_APP_GITHUB_TOKEN || "";
+  const token = process.env.REACT_APP_GITHUB_TOKEN;
   
   const authLink = setContext((_, { headers }) => {
+    if (!token) {
+      console.error('GitHub token is missing');
+      return headers;
+    }
     return {
       headers: {
         ...headers,
