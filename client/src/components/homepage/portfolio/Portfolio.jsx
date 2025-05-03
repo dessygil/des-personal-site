@@ -18,14 +18,13 @@ export default function Portfolio() {
     uri: baseUrl,
   });
 
-  const firstHalf = "ghp_VxgRIC5d3umzSpu54U6";
-  const secondHalf = "VUhW2ECwrov1SNUcK";
-
+  const token = process.env.REACT_APP_GITHUB_TOKEN || "";
+  
   const authLink = setContext((_, { headers }) => {
     return {
       headers: {
         ...headers,
-        authorization: `Bearer ${firstHalf.concat(secondHalf)}`,
+        authorization: `Bearer ${token}`,
       },
     };
   });
