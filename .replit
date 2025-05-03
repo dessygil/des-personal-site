@@ -1,0 +1,20 @@
+modules = ["nodejs-20", "web"]
+
+[nix]
+channel = "stable-24_05"
+
+[workflows]
+runButton = "React Dev"
+
+[[workflows.workflow]]
+name = "React Dev"
+author = 40040205
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd client && npm install && npm start"
+
+[deployment]
+run = ["sh", "-c", "npx serve -s client/build -l 5000"]
+build = ["sh", "-c", "cd client && npm install && npm run build"]
