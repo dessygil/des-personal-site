@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Card from "../shared/Card";
 import {
   ApolloClient,
   InMemoryCache,
@@ -118,7 +119,7 @@ export default function Portfolio() {
             <ul className="topics">{renderRepoTopics(node)}</ul>
           </div>
         </a>
-      </div>
+      </Card>
     ));
   };
 

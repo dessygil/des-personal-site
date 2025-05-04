@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import Card from "../shared/Card";
 import "./blogintro.css";
 
 export default function BlogIntro() {
@@ -52,7 +52,7 @@ export default function BlogIntro() {
             </button>
           </div>
         </div>
-      </div>
+      </Card>
     ));
   };
 
