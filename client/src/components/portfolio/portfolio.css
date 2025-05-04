@@ -10,14 +10,12 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 12px 24px 0 rgba(0,0,0,0.19);
 }
 
-.repos{
+.repos {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-}
-
-.repos :not(:last-child){
-    margin-right:  15px;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
 }
 
 .main-cards {
