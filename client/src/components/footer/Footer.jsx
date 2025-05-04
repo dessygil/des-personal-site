@@ -23,19 +23,14 @@ export default function Footer() {
   const authLink = setContext((_, { headers }) => {
     if (!token) {
       console.error('GitHub token is missing');
-      return { headers };
+      return headers;
     }
-    try {
-      return {
-        headers: {
-          ...headers,
-          authorization: token.startsWith('Bearer ') ? token : `Bearer ${token}`,
-        },
-      };
-    } catch (error) {
-      console.error('Auth configuration error:', error);
-      return { headers };
-    }
+    return {
+      headers: {
+        ...headers,
+        authorization: `Bearer ${token}`,
+      },
+    };
   });
 
   const client = new ApolloClient({
