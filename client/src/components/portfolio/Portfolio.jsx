@@ -88,38 +88,32 @@ export default function Portfolio() {
   };
 
   const renderPinnedItems = () => {
-    return pinnedItems.map((node) => (
-      <div className="card main-cards shadow" style={{ width: "18rem" }}>
-        <div className="card-head">
-          <div className="folder">
-            <i className="fa fa-folder"></i>
-          </div>
-          
-          <div className="links-from-github">
-            {node.homepageUrl && 
-              <a className="a-tag-no-features" href={node.homepageUrl} key={node.id}>
-                <i className="fa-solid fa-up-right-from-square"></i>
-              </a>
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {pinnedItems.map((repo) => (
+          <Card
+            key={repo.id}
+            title={repo.name}
+            description={repo.description}
+            date={repo.updatedAt.slice(0, 10)}
+            topRightLinks={
+              <>
+                {repo.homepageUrl && (
+                  <a className="a-tag-no-features" href={repo.homepageUrl}>
+                    <i className="fa-solid fa-up-right-from-square"></i>
+                  </a>
+                )}
+                <a className="a-tag-no-features" href={repo.url}>
+                  <i className="fa-brands fa-github"></i>
+                </a>
+              </>
             }
-            <a className="a-tag-no-features" href={node.url} key={node.id}>
-              <i className="fa-brands fa-github"></i>{" "}
-            </a>
-          </div>
-        </div>
-        <a className="a-tag-no-features" href={node.url} key={node.id}>
-          <div className="card-body">
-            <p className="date-updated">Last updated: {node.updatedAt.slice(0,10)}</p>
-            <h5 className="card-title my-card-title" key={node.id}>
-              {node.name}
-            </h5>
-            <p className="card-text my-card-text" key={node.id}>
-              {node.description}
-            </p>
-            <ul className="topics">{renderRepoTopics(node)}</ul>
-          </div>
-        </a>
+            topics={repo.repositoryTopics.edges.slice(0, 4).map(edge => edge.node.topic.name)}
+            url={repo.url}
+          />
+        ))}
       </div>
-    ));
+    );
   };
 
   return (

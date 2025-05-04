@@ -27,33 +27,27 @@ export default function BlogIntro() {
 
 
   const renderBlogPosts = () => {
-    return recentPosts.slice(0, 6).map((node) => (
-      <div className="card main-cards shadow" style={{ width: "18rem" }}>
-        <div className="card-body">
-          <p className="date-posted">Posted: {node.created_at.slice(0, 10)}</p>
-          <a className="a-tag-no-features" href={node.url} key={node.id}>
-            <h5 className="card-title my-card-title">
-              {node.title}
-            </h5>
-            <p className="card-text my-card-text">
-              {node.description}
-            </p>
-            <ul className="topics">
-              {node.topics?.map((topic, index) => (
-                <li key={`${node.id}-topic-${index}`}>{topic}</li>
-              ))}
-            </ul>
-          </a>
-          <div className="button-container">
-            <button className="button-56">
-              <a className="no-features" href={node.url}>
-                Read more!
-              </a>
-            </button>
-          </div>
-        </div>
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {recentPosts.slice(0, 6).map((post) => (
+          <Card
+            key={post.id}
+            title={post.title}
+            description={post.description}
+            date={post.created_at.slice(0, 10)}
+            topics={post.topics || []}
+            url={post.url}
+            actionButton={
+              <button className="button-56">
+                <a className="no-features" href={post.url}>
+                  Read more!
+                </a>
+              </button>
+            }
+          />
+        ))}
       </div>
-    ));
+    );
   };
 
   return (

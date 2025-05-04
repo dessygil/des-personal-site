@@ -51,8 +51,8 @@
     display: -webkit-box;
     -webkit-line-clamp: 2; /* number of lines to show */
            line-clamp: 2;
-   -webkit-box-orient: vertical;
-   color: rgb(107, 107, 107)
+    -webkit-box-orient: vertical;
+    color: rgb(107, 107, 107)
 }
 
 
@@ -68,8 +68,7 @@
 }
 
 .topics :not(:last-child){
-    margin-right: 10px;
-    
+    margin-right: 10px;    
 }
 
 .date-updated{
