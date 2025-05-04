@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Card from "../shared/Card";
 import {
   ApolloClient,
   InMemoryCache,
@@ -90,7 +89,7 @@ export default function Portfolio() {
 
   const renderPinnedItems = () => {
     return pinnedItems.map((node) => (
-      <Card key={node.name}>
+      <div className="card main-cards shadow" style={{ width: "18rem" }}>
         <div className="card-head">
           <div className="folder">
             <i className="fa fa-folder"></i>
@@ -119,14 +118,14 @@ export default function Portfolio() {
             <ul className="topics">{renderRepoTopics(node)}</ul>
           </div>
         </a>
-      </Card>
+      </div>
     ));
   };
 
   return (
     <section id="Portfolio-anchor" className="portfolio" aria-label="Portfolio Projects">
       <h2 className="numbered-heading"><a className="a-tag-no-features" href="https://github.com/dessygil" aria-label="View GitHub Profile">Portfolio</a></h2>
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" role="list" aria-label="Project List">
+      <div className="repos" role="list" aria-label="Project List">
         {pinnedItems.length ? renderPinnedItems() : <p role="status">Loading projects...</p>}
       </div>
     </section>
