@@ -8,6 +8,7 @@ import {
 import { setContext } from "@apollo/client/link/context";
 
 import "./portfolio.css";
+import Card from "../shared/Card";
 
 export default function Portfolio() {
   const [pinnedItems, setPinnedItems] = useState([]);

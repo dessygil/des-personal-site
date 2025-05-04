@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-    {!loading ? (
+    {loading ? (
       <Preloader />
     ) : (
     <>

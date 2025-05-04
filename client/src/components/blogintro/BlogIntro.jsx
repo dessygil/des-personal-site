@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./blogintro.css";
+import Card from "../shared/Card";
 
 export default function BlogIntro() {
   const [recentPosts, setRecentPosts] = useState([]);
