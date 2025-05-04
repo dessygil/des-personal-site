@@ -11,11 +11,11 @@ import Preloader from './components/preloader/Preloader';
 import "./index.css";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  React.useEffect(() =>{
-    setTimeout(() => setLoading(true), 3000);
-  })
+  React.useEffect(() => {
+    setTimeout(() => setLoading(false), 3000);
+  }, []);
 
   return (
     <>
