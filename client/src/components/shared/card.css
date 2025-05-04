@@ -1,0 +1,10 @@
+
+.card-shell {
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.card-shell:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 12px 24px 0 rgba(0,0,0,0.19);
+}

@@ -28,7 +28,7 @@ export default function BlogIntro() {
 
   const renderBlogPosts = () => {
     return recentPosts.slice(0, 6).map((node) => (
-      <div className="card main-cards shadow" style={{ width: "18rem" }}>
+      <Card key={node.id}>
         <div className="card-body">
           <p className="date-posted">Posted: {node.created_at.slice(0, 10)}</p>
           <a className="a-tag-no-features" href={node.url} key={node.id}>
@@ -59,7 +59,7 @@ export default function BlogIntro() {
   return (
     <section id="Blog-anchor" className="blog-intro" aria-label="Blog Posts">
       <h2 className="numbered-heading"><a className="a-tag-no-features" href="https://dev.to/dessygil" aria-label="View Dev.to Profile">Blog Posts</a></h2>
-      <div className="blog-posts" role="feed" aria-label="Recent Blog Posts">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" role="feed" aria-label="Recent Blog Posts">
         {recentPosts.length ? renderBlogPosts() : <p role="status">Loading blog posts...</p>}
       </div>
     </section>
