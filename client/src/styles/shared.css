@@ -1,0 +1,38 @@
+
+/* Common flex patterns */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Common margins */
+.mt-30vh {
+  margin-top: 30vh;
+}
+
+/* Common link styles */
+.link-base {
+  text-decoration: none;
+  color: black;
+}
+
+.link-base:hover {
+  text-decoration: none;
+  color: var(--standard-color);
+}
+
+/* Common shadows */
+.hover-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

@@ -88,24 +88,12 @@
   }
 }
 
-.a-tag-no-features{
-  color: black;
-  text-decoration: none;
-}
+@import './styles/shared.css';
 
-.a-tag-no-features:hover{
-  text-decoration: none;
-  color: var(--standard-color);
-}
-
-.box-shadow{
+.box-shadow {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
-.color-ease{
-  transition: var(--standard-color) 1s linear;
-}
-
-.color-ease-dark:hover{
-  transition: var(--standard-color-dark) 1s linear;
+.color-transition {
+  transition: color 0.3s ease;
 }
