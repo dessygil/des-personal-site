@@ -33,10 +33,10 @@ export default function Footer() {
     };
   });
 
-  const client = new ApolloClient({
+  const client = useMemo(() => new ApolloClient({
     link: authLink.concat(httpLink),
     cache: new InMemoryCache(),
-  });
+  }), [authLink, httpLink]);
 
   useEffect(() => {
     client.query({

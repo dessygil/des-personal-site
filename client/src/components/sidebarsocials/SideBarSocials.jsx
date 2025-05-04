@@ -1,7 +1,7 @@
 import React from "react";
 import "./sidebarsocials.css";
 
-export default function SideBarSocials() {
+export default function SocialSidebar() {
   return (
     <div className="side-bar-socials">
       <div>
