@@ -63,10 +63,10 @@
 }
 
 .button-container{
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .blog-subheader:hover{
-   color: var(--standard-color);
+    color: var(--standard-color);
 }
