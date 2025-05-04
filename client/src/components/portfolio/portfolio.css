@@ -1,52 +1,79 @@
-.portfolio {
-  margin-top: 30vh;
+.portfolio{
+    margin-top: 30vh;
 }
 
-.repos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px 0;
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.main-cards {
-  composes: card-base from '../../styles/shared.css';
+.shadow:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 12px 24px 0 rgba(0,0,0,0.19);
 }
 
-.card-head {
-  composes: card-header from '../../styles/shared.css';
-  display: flex;
-  justify-content: space-between;
+.repos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.card-body {
-  composes: card-content from '../../styles/shared.css';
+.repos :not(:last-child){
+    margin-right:  15px;
 }
 
-.my-card-title {
-  composes: card-title from '../../styles/shared.css';
+.main-cards{
+    flex: 0 0 320px;
+    margin-bottom: 15px;
+}
+
+.card-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 3rem;
+    padding: 15px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+.my-card-title{
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .my-card-text {
-  composes: card-description from '../../styles/shared.css';
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2;
+   -webkit-box-orient: vertical;
+   color: rgb(107, 107, 107)
 }
 
-.topics {
-  composes: card-topics from '../../styles/shared.css';
+
+.topics{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    font-size: 14px;
+    color: rgb(107, 107, 107);
 }
 
-.date-updated {
-  color: #999;
-  font-size: 0.75rem;
-  margin-bottom: 15px;
+.topics :not(:last-child){
+    margin-right: 10px;
+    
 }
 
-.folder {
-  color: var(--standard-color);
-}
-
-.links-from-github {
-  display: flex;
-  gap: 10px;
+.date-updated{
+    margin: 0 0 0.5rem 0;
+    color: #999;
+    font-size: 0.75rem;
 }
