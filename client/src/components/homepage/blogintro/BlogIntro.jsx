@@ -36,13 +36,17 @@ export default function BlogIntro() {
         <div className="card-body">
           <p className="date-posted">Posted: {node.created_at.slice(0, 10)}</p>
           <a className="a-tag-no-features" href={node.url} key={node.id}>
-            <h5 className="card-title my-card-title" key={node.id}>
+            <h5 className="card-title my-card-title">
               {node.title}
             </h5>
-            <p className="card-text my-card-text" key={node.id}>
+            <p className="card-text my-card-text">
               {node.description}
             </p>
-            <ul className="topics">{renderBlogTopics(node)}</ul>
+            <ul className="topics">
+              {node.topics?.map((topic, index) => (
+                <li key={`${node.id}-topic-${index}`}>{topic}</li>
+              ))}
+            </ul>
           </a>
           <div className="button-container">
             <button className="button-56">

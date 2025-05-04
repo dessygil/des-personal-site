@@ -19,7 +19,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }} className="box-content">
-          <Typography>{children}</Typography>
+          {children}
         </Box>
       )}
     </div>
@@ -55,7 +55,7 @@ export default function Experience() {
       title: "Sales Development Representative",
       company: "Patsnap",
       url: "https://www.patsnap.com/",
-      startDate: new Date("2021-12-08T14:56:59.301+00:00") ,
+      startDate: new Date("2021-12-08T14:56:59.301+00:00"),
       endDate: new Date("2023-03-01T14:56:59.301+00:00"),
       duties: [
         "Used cold outreach techniques to generate the highest amount of leads in Q3 (23) and the third highest revenue in Q2 (\$54,000) and Q3 (\$57,000).",
@@ -75,12 +75,12 @@ export default function Experience() {
         "Presented synthetic scheme at CEPS undergraduate poster session of approximately 30 students.",
       ],
     },
-  ]
+  ];
 
   const renderTabPanel = () => {
     return (
-      <>
-        <h3>
+      <div>
+        <Typography variant="h3">
           <span className="title">{jobs[activeTab].title}</span>
           <span className="company">
             &nbsp;@&nbsp;
@@ -88,22 +88,23 @@ export default function Experience() {
               {jobs[activeTab].company}
             </a>
           </span>
-        </h3>
-
-        <p className="date">
+        </Typography>
+        <Typography variant="body1" className="date">
           {formatDate(jobs[activeTab].startDate)}&nbsp;-&nbsp;
           {jobs[activeTab].endDate ? (
             formatDate(jobs[activeTab].endDate)
           ) : (
             <span>Present</span>
           )}
-        </p>
+        </Typography>
         <ul className="duties-list">
-          {jobs[activeTab].duties.map((node, i) => {
-            return <li key={node} className="duties">{node}</li>
-          })}
-        </ul>    
-      </>
+          {jobs[activeTab].duties.map((duty, i) => (
+            <li key={i} className="duties">
+              {duty}
+            </li>
+          ))}
+        </ul>
+      </div>
     );
   };
 
@@ -149,15 +150,13 @@ export default function Experience() {
           onChange={handleChange}
           sx={{ borderRight: 1, borderColor: "divider" }}
         >
-          {jobs.length ? (
-            jobs.map((node, i) => {
-              return <Tab key={node.startDate} label={node.company} />;
-            })
-          ) : (
-            <p> Loading</p>
-          )}
+          {jobs.map((job, i) => (
+            <Tab key={job.startDate} label={job.company} />
+          ))}
         </Tabs>
-        <TabPanel>{jobs.length ? renderTabPanel() : <p> Loading</p>}</TabPanel>
+        <TabPanel value={activeTab} index={activeTab}>
+          {jobs.length ? renderTabPanel() : <p>Loading</p>}
+        </TabPanel>
       </Box>
     </div>
   );
