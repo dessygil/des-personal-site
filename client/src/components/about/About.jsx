@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./about.css";
-import "../../../index.css";
+import "../../index.css";
 import headshot from "./headshot.jpg";
 
 export default function About() {

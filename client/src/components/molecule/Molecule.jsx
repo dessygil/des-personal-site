@@ -7,7 +7,7 @@ export default function Molecule() {
     const containerRef = useRef();
 
     useEffect(() => {
-
+        const container = containerRef.current;
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(
             75, 
@@ -64,7 +64,6 @@ export default function Molecule() {
 
     // Clean up
         return () => {
-            const container = containerRef.current;
             if (container && renderer) {
                 container.removeChild(renderer.domElement);
                 renderer.dispose();

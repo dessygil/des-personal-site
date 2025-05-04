@@ -23,11 +23,7 @@ export default function BlogIntro() {
       });
   }, []);
 
-  const renderBlogTopics = (node) => {
-    return node.tag_list
-      .slice(0, 4)
-      .map((node) => <li className="topic">{node}</li>);
-  };
+  
 
 
   const renderBlogPosts = () => {

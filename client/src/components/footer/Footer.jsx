@@ -39,6 +39,7 @@ export default function Footer() {
   }), [authLink, httpLink]);
 
   useEffect(() => {
+    if (!client) return;
     client.query({
         query: gql`
           {

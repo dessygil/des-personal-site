@@ -40,6 +40,7 @@ export default function Portfolio() {
   });
 
   useEffect(() => {
+    if (!client) return;
     client
       .query({
         query: gql`
