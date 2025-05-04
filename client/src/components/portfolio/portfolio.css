@@ -20,24 +20,40 @@
     margin-right:  15px;
 }
 
-.main-cards{
-    flex: 0 0 320px;
-    margin-bottom: 15px;
+.main-cards {
+  composes: card-base from '../../styles/shared.css';
 }
 
-.card-head{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 3rem;
-    padding: 15px;
+.card-head {
+  composes: card-header from '../../styles/shared.css';
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
 }
 
-.card-body{
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-evenly;
-    margin-top: 5px;
+.card-body {
+  composes: card-content from '../../styles/shared.css';
+}
+
+.my-card-text {
+  composes: card-description from '../../styles/shared.css';
+  color: rgb(107, 107, 107);
+}
+
+.topics {
+  composes: card-footer from '../../styles/shared.css';
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  color: rgb(107, 107, 107);
+}
+
+.date-updated {
+  margin: 0 0 0.5rem;
+  color: #999;
+  font-size: 0.75rem;
 }
 
 .my-card-title{
