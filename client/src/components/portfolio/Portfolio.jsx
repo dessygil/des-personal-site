@@ -123,11 +123,11 @@ export default function Portfolio() {
   };
 
   return (
-    <div id="Portfolio-anchor" className="portfolio">
-      <h2 className="numbered-heading"><a className="a-tag-no-features" href="https://github.com/dessygil">Portfolio</a></h2>
-      <div className="repos">
-        {pinnedItems.length ? renderPinnedItems() : <p>Loading...</p>}
+    <section id="Portfolio-anchor" className="portfolio" aria-label="Portfolio Projects">
+      <h2 className="numbered-heading"><a className="a-tag-no-features" href="https://github.com/dessygil" aria-label="View GitHub Profile">Portfolio</a></h2>
+      <div className="repos" role="list" aria-label="Project List">
+        {pinnedItems.length ? renderPinnedItems() : <p role="status">Loading projects...</p>}
       </div>
-    </div>
+    </section>
   );
 }

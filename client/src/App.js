@@ -24,6 +24,7 @@ function App() {
     ) : (
     <>
     <div className="body">
+      <a href="#main" className="skip-to-content">Skip to main content</a>
       <div>
         < TopBar />
       </div>

@@ -57,11 +57,11 @@ export default function BlogIntro() {
   };
 
   return (
-    <div id="Blog-anchor" className="blog-intro">
-      <h2 className="numbered-heading"><a className="a-tag-no-features" href="https://dev.to/dessygil">Blog Posts</a></h2>
-      <div className="blog-posts">
-        {recentPosts.length ? renderBlogPosts() : <p>Loading...</p>}
+    <section id="Blog-anchor" className="blog-intro" aria-label="Blog Posts">
+      <h2 className="numbered-heading"><a className="a-tag-no-features" href="https://dev.to/dessygil" aria-label="View Dev.to Profile">Blog Posts</a></h2>
+      <div className="blog-posts" role="feed" aria-label="Recent Blog Posts">
+        {recentPosts.length ? renderBlogPosts() : <p role="status">Loading blog posts...</p>}
       </div>
-    </div>
+    </section>
   );
 }

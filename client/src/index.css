@@ -6,7 +6,31 @@
 :root{
   --standard-color: rgb(134, 172, 243);
   --standard-color-dark: rgb(59, 96, 165);
+  --main-color: #64ffda; /* Added this line from the changes */
 }
+
+/* Improve focus visibility */
+*:focus {
+  outline: 2px solid var(--main-color);
+  outline-offset: 2px;
+}
+
+/* Skip to main content - accessibility feature */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: var(--main-color);
+  color: black;
+  text-decoration: none;
+}
+
+.skip-to-content:focus {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 .full-page-structure {
   display: flex;
@@ -14,7 +38,7 @@
 }
 
 .body{
-  
+
 }
 
 .right-side-div {
