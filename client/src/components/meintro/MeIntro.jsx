@@ -7,8 +7,7 @@ export default function HeroSection() {
   const two = <h1 className="intro-text"><span className="name-underline">Desmond Gilmour</span>.</h1>;
   const three = (
     <p className="three">
-      I'm a sales professional, hobby software developer, and chemistry enthusiast.
-      I have a dual degree in chemistry and computer science and a  history of hitting quota.
+      Passionate about transforming complex technical challenges into profitable business results, I       leverage my scientific background and software expertise to uncover client needs, deliver            innovative solutions, and consistently exceed sales targets.
     </p>
   );
 
