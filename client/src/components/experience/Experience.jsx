@@ -133,7 +133,7 @@ export default function ExperienceComponent() {
   };
 
   return (
-    <div className="experience" id="Experience-anchor">
+    <section className="experience" id="Experience-anchor" aria-label="Work Experience">
       <h2 className="numbered-heading">Where I’ve Worked</h2>
       <Box
         sx={{
@@ -142,6 +142,8 @@ export default function ExperienceComponent() {
           display: "flex",
           height: 224,
         }}
+        role="tablist"
+        aria-label="Company tabs"
       >
         <Tabs
           orientation="vertical"
@@ -158,6 +160,6 @@ export default function ExperienceComponent() {
           {jobs.length ? renderTabPanel() : <p>Loading</p>}
         </TabPanel>
       </Box>
-    </div>
+    </section>
   );
 }
