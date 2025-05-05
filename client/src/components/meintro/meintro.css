@@ -15,11 +15,13 @@
     color: rgb(18, 17, 17);
 }
 
-.two {
+.intro-text {
     font-size: 5em;
-    display: inline-block;
-    border-bottom: 6px solid var(--standard-color);
     line-height: 1;
+}
+
+.name-underline {
+    border-bottom: 6px solid var(--standard-color);
     padding-bottom: 5px;
 }
 
