@@ -6,9 +6,9 @@
   margin-bottom: 1rem;
   height: 340px;
   width: 320px;
-  display: grid;
-  grid-template-rows: auto auto auto 1fr auto;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: all 0.3s ease;
   overflow: hidden;

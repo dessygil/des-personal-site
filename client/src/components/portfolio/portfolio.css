@@ -49,10 +49,12 @@
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
-           line-clamp: 2;
-   -webkit-box-orient: vertical;
-   color: rgb(107, 107, 107)
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: rgb(107, 107, 107);
+    max-height: 3em;
+    margin: 0;
 }
 
 
