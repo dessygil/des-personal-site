@@ -18,7 +18,7 @@
 .two {
     font-size: 5em;
     display: inline-block;
-    border-bottom: 4px solid var(--standard-color);
+    border-bottom: 6px solid var(--standard-color);
     line-height: 1;
     padding-bottom: 5px;
 }

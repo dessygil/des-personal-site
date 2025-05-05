@@ -4,7 +4,7 @@ import "./meintro.css";
 
 export default function HeroSection() {
   const one = <h3 className="one">Hi, my name is</h3>;
-  const two = <h1 className="two">Desmond Gilmour.</h1>;
+  const two = <h1 className="two">Desmond Gilmour</h1>;
   const three = (
     <p className="three">
       I'm a sales professional, hobby software developer, and chemistry enthusiast.
