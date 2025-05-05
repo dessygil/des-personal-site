@@ -116,7 +116,7 @@ export default function Portfolio() {
             <p className="card-text my-card-text" key={node.id}>
               {node.description}
             </p>
-            <ul className="topics">{renderRepoTopics(node)}</ul>
+            <ul className="topics topics-container">{renderRepoTopics(node)}</ul>
           </div>
         </a>
       </CardShell>

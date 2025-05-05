@@ -32,10 +32,10 @@ export default function BlogIntro() {
         <div className="card-body">
           <p className="date-posted">Posted: {node.created_at.slice(0, 10)}</p>
           <a className="a-tag-no-features" href={node.url} key={node.id}>
-            <h5 className="card-title my-card-title">
+            <h5 className="card-title my-card-title card-title">
               {node.title}
             </h5>
-            <p className="card-text my-card-text">
+            <p className="card-text my-card-text card-description">
               {node.description}
             </p>
             <ul className="topics">
