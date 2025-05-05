@@ -91,34 +91,31 @@ export default function Portfolio() {
   const renderPinnedItems = () => {
     return pinnedItems.map((node) => (
       <CardShell key={node.id}>
-        <div className="card-head">
-          <div className="folder">
-            <i className="fa fa-folder"></i>
-          </div>
-          
-          <div className="links-from-github">
-            {node.homepageUrl && 
-              <a className="a-tag-no-features" href={node.homepageUrl} key={node.id}>
-                <i className="fa-solid fa-up-right-from-square"></i>
+        <div className="card-body">
+          <div className="card-head">
+            <div className="folder">
+              <i className="fa fa-folder"></i>
+            </div>
+            <div className="links-from-github">
+              {node.homepageUrl && 
+                <a className="a-tag-no-features" href={node.homepageUrl} key={node.id}>
+                  <i className="fa-solid fa-up-right-from-square"></i>
+                </a>
+              }
+              <a className="a-tag-no-features" href={node.url} key={node.id}>
+                <i className="fa-brands fa-github"></i>{" "}
               </a>
-            }
-            <a className="a-tag-no-features" href={node.url} key={node.id}>
-              <i className="fa-brands fa-github"></i>{" "}
-            </a>
+            </div>
           </div>
+          <p className="date-updated">Last updated: {node.updatedAt.slice(0,10)}</p>
+          <h5 className="card-title my-card-title" key={node.id}>
+            {node.name}
+          </h5>
+          <p className="card-text my-card-text" key={node.id}>
+            {node.description}
+          </p>
+          <ul className="topics topics-container">{renderRepoTopics(node)}</ul>
         </div>
-        <a className="a-tag-no-features" href={node.url} key={node.id}>
-          <div className="card-body">
-            <p className="date-updated">Last updated: {node.updatedAt.slice(0,10)}</p>
-            <h5 className="card-title my-card-title" key={node.id}>
-              {node.name}
-            </h5>
-            <p className="card-text my-card-text" key={node.id}>
-              {node.description}
-            </p>
-            <ul className="topics topics-container">{renderRepoTopics(node)}</ul>
-          </div>
-        </a>
       </CardShell>
     ));
   };
