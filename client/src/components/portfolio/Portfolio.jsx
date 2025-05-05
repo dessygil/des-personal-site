@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Card from "../shared/Card";
+import CardShell from "../shared/CardShell";
 import {
   ApolloClient,
   InMemoryCache,
@@ -90,7 +90,7 @@ export default function Portfolio() {
 
   const renderPinnedItems = () => {
     return pinnedItems.map((node) => (
-      <Card key={node.id}>
+      <CardShell key={node.id}>
         <div className="card-head">
           <div className="folder">
             <i className="fa fa-folder"></i>
@@ -119,7 +119,7 @@ export default function Portfolio() {
             <ul className="topics">{renderRepoTopics(node)}</ul>
           </div>
         </a>
-      </Card>
+      </CardShell>
     ));
   };
 
