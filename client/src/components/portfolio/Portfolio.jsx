@@ -119,7 +119,7 @@ export default function Portfolio() {
             <ul className="topics">{renderRepoTopics(node)}</ul>
           </div>
         </a>
-      </div>
+      </Card>
     ));
   };
 

@@ -52,7 +52,7 @@ export default function BlogIntro() {
             </button>
           </div>
         </div>
-      </div>
+      </Card>
     ));
   };
 
