@@ -43,12 +43,11 @@
 .my-card-title{
     font-weight: 700;
     font-size: 24px;
+    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    line-clamp: 1;
-    -webkit-box-orient: vertical;
+    max-width: 100%;
+    display: block;
 }
 
 .my-card-text {
