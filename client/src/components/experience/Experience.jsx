@@ -134,13 +134,14 @@ export default function ExperienceComponent() {
 
   return (
     <section className="experience" id="Experience-anchor" aria-label="Work Experience">
-      <h2 className="numbered-heading">Where I’ve Worked</h2>
+      <h2 className="numbered-heading">Where I've Worked</h2>
       <Box
         sx={{
           flexGrow: 1,
           bgcolor: "background.paper",
           display: "flex",
-          height: 224,
+          height: "auto",
+          minHeight: 300,
         }}
         role="tablist"
         aria-label="Company tabs"
