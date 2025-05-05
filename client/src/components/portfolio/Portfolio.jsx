@@ -93,9 +93,6 @@ export default function Portfolio() {
       <CardShell key={node.id}>
         <div className="card-body">
           <div className="card-head">
-            <div className="folder">
-              <i className="fa fa-folder"></i>
-            </div>
             <div className="links-from-github">
               {node.homepageUrl && 
                 <a className="a-tag-no-features" href={node.homepageUrl} key={node.id}>
