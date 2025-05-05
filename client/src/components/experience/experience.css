@@ -1,13 +1,5 @@
 .experience {
-  margin: 30vh auto 0;
-  max-width: 900px;
-  padding: 0 20px;
-}
-
-@media (max-width: 768px) {
-  .experience {
-    margin-top: 15vh;
-  }
+  margin-top: 30vh;
 }
 
 .title, .company {
@@ -52,16 +44,10 @@
 }
 
 .duties {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   position: relative;
   padding-left: 30px;
   max-width: 600px;
-  line-height: 1.5;
-  transition: transform 0.2s ease;
-}
-
-.duties:hover {
-  transform: translateX(10px);
 }
 
 .duties::before {
