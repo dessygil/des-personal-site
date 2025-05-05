@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import Card from "../shared/Card";
 import "./blogintro.css";
 
 export default function BlogIntro() {
@@ -28,7 +28,7 @@ export default function BlogIntro() {
 
   const renderBlogPosts = () => {
     return recentPosts.slice(0, 6).map((node) => (
-      <div className="card main-cards shadow" style={{ width: "18rem" }}>
+      <Card key={node.id}>
         <div className="card-body">
           <p className="date-posted">Posted: {node.created_at.slice(0, 10)}</p>
           <a className="a-tag-no-features" href={node.url} key={node.id}>
