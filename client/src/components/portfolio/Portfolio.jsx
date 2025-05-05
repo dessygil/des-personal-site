@@ -85,7 +85,11 @@ export default function Portfolio() {
   const renderRepoTopics = (node) => {
     return node.repositoryTopics.edges
       .slice(0, 4)
-      .map((node) => <li className="topic">{node.node.topic.name}</li>);
+      .map((topicNode, index) => (
+        <li key={`${node.name}-topic-${index}`} className="topic">
+          {topicNode.node.topic.name}
+        </li>
+      ));
   };
 
   const renderPinnedItems = () => {
