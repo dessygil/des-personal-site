@@ -8,6 +8,7 @@
 /coverage
 
 # Production
+/client/build
 /build
 /dist
 
@@ -44,3 +45,4 @@ yarn-error.log*
 .DS_Store
 *.pem
 .nix/
+
