@@ -22,7 +22,8 @@
 
 .name-underline {
     border-bottom: 6px solid var(--standard-color);
-    padding-bottom: 5px;
+    padding-bottom: 2px;
+    display: inline-block;
 }
 
 .three {

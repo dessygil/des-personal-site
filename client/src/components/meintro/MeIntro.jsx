@@ -4,7 +4,7 @@ import "./meintro.css";
 
 export default function HeroSection() {
   const one = <h3 className="one">Nice to meet you!</h3>;
-  const two = <h1 className="intro-text">I'm <span className="name-underline">Desmond Gilmour</span>.</h1>;
+  const two = <h1 className="intro-text"><h3 style={{display: 'inline'}}>I'm </h3><span className="name-underline">Desmond Gilmour</span>.</h1>;
   const three = (
     <p className="three">
       I'm a sales professional, hobby software developer, and chemistry enthusiast.
