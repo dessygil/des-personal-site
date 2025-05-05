@@ -3,8 +3,8 @@ import React from "react";
 import "./meintro.css";
 
 export default function HeroSection() {
-  const one = <h3 className="one">Nice to meet you!</h3>;
-  const two = <h1 className="intro-text"><span className="small-text">I'm </span><span className="name-underline">Desmond Gilmour</span>.</h1>;
+  const one = <h3 className="one">Hi, my name is </h3>;
+  const two = <h1 className="intro-text"><span className="name-underline">Desmond Gilmour</span>.</h1>;
   const three = (
     <p className="three">
       I'm a sales professional, hobby software developer, and chemistry enthusiast.
