@@ -1,20 +1,18 @@
+
 .experience {
   margin-top: 30vh;
+  margin-bottom: 30vh;
 }
 
-.title, .company {
-  font-weight: 500;
-  font-size: 22px;
-}
-
-.company {
-  color: var(--standard-color-dark);
+.company-name {
+  font-size: 22px !important;
+  margin-bottom: 20px !important;
 }
 
 .company-link {
   position: relative;
   cursor: pointer;
-  text-decoration: none; /* Added back from original, as it's not in edited */
+  text-decoration: none;
   color: var(--standard-color-dark);
 }
 
@@ -37,6 +35,22 @@
   transform: scaleX(1);
 }
 
+.position-container {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  margin-bottom: 5px !important;
+}
+
+.date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
 .duties-list {
   list-style: none;
   margin: 0;
@@ -48,6 +62,8 @@
   position: relative;
   padding-left: 30px;
   max-width: 600px;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 .duties::before {
@@ -55,4 +71,8 @@
   position: absolute;
   left: 0;
   color: var(--standard-color-dark);
+}
+
+.box-content {
+  min-height: 400px;
 }
