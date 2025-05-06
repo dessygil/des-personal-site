@@ -1,21 +1,38 @@
+
 .experience {
-  margin-top: 30vh;
+  margin: 30vh auto 0;
+  max-width: 1000px;
+  padding: 0 20px;
 }
 
-.title, .company {
-  font-weight: 500;
-  font-size: 22px;
+@media (max-width: 768px) {
+  .experience {
+    margin-top: 15vh;
+  }
 }
 
-.company {
-  color: var(--standard-color-dark);
+.box-content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.company-header {
+  margin-bottom: 2rem !important;
+  font-size: 2rem !important;
 }
 
 .company-link {
-  position: relative;
-  cursor: pointer;
-  text-decoration: none; /* Added back from original, as it's not in edited */
   color: var(--standard-color-dark);
+  text-decoration: none;
+  position: relative;
 }
 
 .company-link::before {
@@ -37,6 +54,21 @@
   transform: scaleX(1);
 }
 
+.position-block {
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.date {
+  color: var(--standard-color-dark);
+  margin-bottom: 1rem !important;
+}
+
 .duties-list {
   list-style: none;
   margin: 0;
@@ -44,10 +76,12 @@
 }
 
 .duties {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   position: relative;
   padding-left: 30px;
-  max-width: 600px;
+  max-width: 700px;
+  line-height: 1.6;
+  font-size: 15px;
 }
 
 .duties::before {
