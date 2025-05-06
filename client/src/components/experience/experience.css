@@ -1,58 +1,40 @@
-
 .experience {
-  margin: 30vh auto 0;
-  max-width: 900px;
-  padding: 0 20px;
+  margin-top: 30vh;
 }
 
-.company-content {
-  padding: 20px;
+.title, .company {
+  font-weight: 500;
+  font-size: 22px;
 }
 
-.company-name {
-  margin-bottom: 30px !important;
-  font-size: 28px !important;
+.company {
+  color: var(--standard-color-dark);
 }
 
 .company-link {
-  color: var(--standard-color-dark);
-  text-decoration: none;
   position: relative;
-}
-
-.company-link:hover {
+  cursor: pointer;
+  text-decoration: none; /* Added back from original, as it's not in edited */
   color: var(--standard-color-dark);
 }
 
-.company-link::after {
+.company-link::before {
   content: '';
   position: absolute;
   width: 100%;
-  height: 2px;
-  bottom: -4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
   left: 0;
-  background-color: var(--standard-color-dark);
+  transform-origin: right;
   transform: scaleX(0);
-  transition: transform 0.3s ease;
+  transition: transform .3s ease-in-out;
 }
 
-.company-link:hover::after {
+.company-link:hover::before {
+  transform-origin: left;
   transform: scaleX(1);
-}
-
-.position-container {
-  margin-bottom: 40px;
-}
-
-.position-title {
-  font-size: 20px !important;
-  margin-bottom: 5px !important;
-}
-
-.position-date {
-  color: #666;
-  font-size: 14px !important;
-  margin-bottom: 15px !important;
 }
 
 .duties-list {
@@ -65,7 +47,7 @@
   margin-bottom: 10px;
   position: relative;
   padding-left: 30px;
-  line-height: 1.5;
+  max-width: 600px;
 }
 
 .duties::before {
@@ -73,14 +55,4 @@
   position: absolute;
   left: 0;
   color: var(--standard-color-dark);
-}
-
-@media (max-width: 768px) {
-  .experience {
-    margin-top: 15vh;
-  }
-  
-  .company-content {
-    padding: 10px;
-  }
 }
