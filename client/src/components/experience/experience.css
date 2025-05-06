@@ -2,13 +2,25 @@
   margin-top: 30vh;
 }
 
-.title, .company {
-  font-weight: 500;
-  font-size: 22px;
+.company-header {
+  color: var(--standard-color-dark);
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 20px;
 }
 
-.company {
-  color: var(--standard-color-dark);
+.title {
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.position-block {
+  margin-bottom: 25px;
+}
+
+.position-block:last-child {
+  margin-bottom: 0;
 }
 
 .company-link {
