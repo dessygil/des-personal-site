@@ -187,7 +187,7 @@ export default function ExperienceComponent() {
           ))}
         </Tabs>
         <TabPanel value={activeTab} index={activeTab}>
-          {jobs.length ? renderTabPanel() : <p>Loading</p>}
+          {renderTabPanel()}
         </TabPanel>
       </Box>
     </section>
