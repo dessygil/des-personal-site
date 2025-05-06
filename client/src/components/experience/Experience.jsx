@@ -46,11 +46,21 @@ export default function ExperienceComponent() {
       url: "http://nicoyalife.com",
       positions: [
         {
-          title: "Interim Account Executive",
+          title: "Account Executive: OpenSPR Specialist",
+            startDate: new Date("2024-06-01"),
+            endDate: null,
+            duties: [
+              "Beginning June, I will be an instrument sales specialist for our OpenSPR line",
+            ]
+        },
+        {
+          title: "Interim Account Executive & SDR Team Lead, EMEA",
           startDate: new Date("2024-01-01"),
-          endDate: null,
+          endDate: new Date("2024-06-01"),
           duties: [
-            "Manage New England territory, fostering strategic partnerships with clients, including Sanofi Regan Institute and Moderna, to drive revenue growth and expand market presence.",
+            "Managed New England AE responsibilities with companies such as Sanofi, Ginkgo & Moderna.",  
+            "Coached 3 SDRs on messaging & pipeline best practices to boost conversions.",  
+            "Drove EMEA SDR outreach strategy, consistently surpassing lead-gen targets.",  
           ]
         },
         {
