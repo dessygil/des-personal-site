@@ -140,7 +140,8 @@ export default function ExperienceComponent() {
           flexGrow: 1,
           bgcolor: "background.paper",
           display: "flex",
-          height: 224,
+          minHeight: 300,
+          height: "auto",
         }}
         role="tablist"
         aria-label="Company tabs"
@@ -157,7 +158,11 @@ export default function ExperienceComponent() {
           ))}
         </Tabs>
         <TabPanel value={activeTab} index={activeTab}>
-          {jobs.length ? renderTabPanel() : <p>Loading</p>}
+          {jobs.length ? renderTabPanel() : (
+            <div className="loading-state">
+              <p>Loading experience details...</p>
+            </div>
+          )}
         </TabPanel>
       </Box>
     </section>
