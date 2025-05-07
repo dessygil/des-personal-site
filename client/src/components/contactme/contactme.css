@@ -2,8 +2,8 @@
   display: flex;
   align-items: flex-end;
   background-color: #0a192f;
-  margin-top: 0;
-  border-radius: 20px 20px 0 0;
+  margin: 15vh 0 10vh 0;
+  border-radius: 20px;
   overflow: hidden;
 }
 
