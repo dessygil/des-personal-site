@@ -1,42 +1,43 @@
-
-.contact-me {
-  padding: 80px 0;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
+.contact-me{
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5rem;
 }
 
-.contact-me-title {
-  font-size: 3.5rem;
-  margin-bottom: 30px;
-  color: #333;
+.contact-me-title{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.paragraph-container{
+    margin: 0 auto;
 }
 
-.paragraph-container {
-  margin-bottom: 50px;
+.contact-me-paragraph{
+    width: 40rem;
 }
 
-.contact-me-paragraph {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #555;
+.button-container{
+    
 }
 
-.button-container {
-  margin-bottom: 60px;
+.button_center_and_margin{
+    display: inline-block;
+    margin-top: 40px;
 }
 
-.contact-me-email {
-  display: inline-block;
-  font-size: 1.8rem;
-  color: var(--standard-color);
-  text-decoration: none;
-  padding: 15px 30px;
-  border: 2px solid var(--standard-color);
-  border-radius: 5px;
-  transition: all 0.3s ease;
+.contact-me-email-button{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    padding: 15px;
+    width: 12rem;
 }
 
-.contact-me-email:hover {
-  background-color: rgba(59, 96, 165, 0.1);
-}
+.contact-me-email-button:hover {
+    outline: none;
+    text-decoration: none;
+    color: black;
+  }

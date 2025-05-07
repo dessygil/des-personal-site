@@ -1,30 +1,14 @@
-
-.footer {
-  padding: 20px 0;
-  text-align: center;
-  border-top: 1px solid #eaeaea;
-  margin-top: 40px;
+.footer{
+    height: 100px;
+    text-align: center;
 }
 
-.footer-text {
-  color: #666;
-  font-size: 0.9rem;
-  line-height: 1.6;
+.footer-link{
+    text-decoration: none;
+    color: black;
 }
 
-.footer-link {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-  color: var(--standard-color);
-}
-
-.star-count {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  margin-top: 5px;
+.footer-link:hover{
+    text-decoration: none;
+    color: var(--standard-color);
 }
