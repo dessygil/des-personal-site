@@ -15,7 +15,7 @@ export default function Molecule() {
             0.1, 
             2000 
         );
-        camera.position.z = 400;
+        camera.position.z = 625;
 
 
         // Create a Three.js renderer

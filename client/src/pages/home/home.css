@@ -20,10 +20,8 @@
 .main-page-molecule-opener {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
   margin: 0 0 40px;
-  gap: 20px;
 }
 
 .numbered-heading {
