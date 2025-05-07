@@ -5,21 +5,37 @@ import nicoyaImage from "./nicoya-booth.jpg";
 
 export default function ContactMe() {
   return (
-    <section className="contact-section" id="Contact-anchor">
+    <div className="contact-section" id="Contact-anchor">
       <div className="contact-content">
         <div className="contact-left">
           <h2 className="contact-heading">Say hi.</h2>
-          <a href="mailto:desmondgilmour@gmail.com" className="contact-email">
-            hello@desmondgilmour.com
-          </a>
+          <div className="contact-email-container">
+            <a href="mailto:desmondgilmour@gmail.com" className="contact-email">
+              hello@desmondgilmour.com
+            </a>
+          </div>
           <p className="contact-description">
-            I'm passionate about transforming complex technical challenges into business results. Always open to new opportunities and interesting conversations.
+            I love to solve complex technical challenges and drive business results. Currently based in Toronto, Canada.
           </p>
+          <div className="social-links">
+            <a href="mailto:desmondgilmour@gmail.com">
+              <i className="social-icon fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://stackoverflow.com/users/12100881/desmond-gilmour">
+              <i className="social-icon fa-brands fa-stack-overflow"></i>
+            </a>
+            <a href="https://github.com/dessygil">
+              <i className="social-icon fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/desmond-gilmour-886b3a128/">
+              <i className="social-icon fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
         </div>
         <div className="contact-right">
           <img src={nicoyaImage} alt="Nicoya Conference Booth" className="contact-image" />
         </div>
       </div>
-    </section>
+    </div>
   );
 }

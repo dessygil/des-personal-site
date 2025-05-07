@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   padding: 0 40px;
+  background-color: rgb(250, 250, 250);
 }
 
 .contact-content {
@@ -17,7 +18,6 @@
 .contact-left {
   flex: 1;
   padding-right: 40px;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .contact-heading {
@@ -27,17 +27,19 @@
   color: #0a192f;
 }
 
+.contact-email-container {
+  margin-bottom: 24px;
+}
+
 .contact-email {
-  display: block;
   font-size: 32px;
   color: var(--standard-color);
   text-decoration: none;
-  margin-bottom: 24px;
   transition: color 0.3s ease;
 }
 
 .contact-email:hover {
-  color: #2a4a8d;
+  color: var(--standard-color-dark);
 }
 
 .contact-description {
@@ -45,6 +47,22 @@
   line-height: 1.6;
   color: #555;
   max-width: 460px;
+  margin-bottom: 32px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--standard-color);
 }
 
 .contact-right {
@@ -67,9 +85,6 @@
 
   .contact-left {
     padding-right: 0;
-    border-right: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 40px;
   }
 
   .contact-heading {
