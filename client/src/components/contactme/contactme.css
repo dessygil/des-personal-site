@@ -62,11 +62,12 @@
 
 .social-links {
   display: flex;
-  gap: 16px;
+  gap: 24px;
+  justify-content: center;
 }
 
-.social-icon {
-  font-size: 20px;
+.contact-social-icon {
+  font-size: 28px;
   color: #fff;
   transition: color 0.3s ease;
 }
