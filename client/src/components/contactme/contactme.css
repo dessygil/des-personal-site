@@ -4,21 +4,23 @@
   display: flex;
   align-items: center;
   background-color: rgb(250, 250, 250);
+  margin-top: 20vh;
 }
 
 .contact-content {
   display: flex;
   width: 100%;
   margin: 0;
+  height: 80vh;
 }
 
 .contact-left {
-  flex: 1;
+  flex: 0.8;
   background-color: #0a192f;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
-  padding: 0 80px;
+  padding: 0 60px;
 }
 
 .contact-text-container {
