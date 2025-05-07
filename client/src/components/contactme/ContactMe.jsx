@@ -9,18 +9,13 @@ export default function ContactMe() {
       <div className="contact-content">
         <div className="contact-left">
           <h2 className="contact-heading">Say hi.</h2>
-          <div className="contact-email-container">
-            <a href="mailto:desmondgilmour@gmail.com" className="contact-email">
-              hello@desmondgilmour.com
-            </a>
-          </div>
+          <a href="mailto:desmondgilmour@gmail.com" className="contact-email">
+            hello@desmondgilmour.com
+          </a>
           <p className="contact-description">
             I love to solve complex technical challenges and drive business results. Currently based in Toronto, Canada.
           </p>
           <div className="social-links">
-            <a href="mailto:desmondgilmour@gmail.com">
-              <i className="social-icon fa-solid fa-envelope"></i>
-            </a>
             <a href="https://stackoverflow.com/users/12100881/desmond-gilmour">
               <i className="social-icon fa-brands fa-stack-overflow"></i>
             </a>

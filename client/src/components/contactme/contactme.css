@@ -1,6 +1,6 @@
 
 .contact-section {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   padding: 0 40px;
@@ -10,32 +10,30 @@
 .contact-content {
   display: flex;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  gap: 60px;
+  gap: 40px;
 }
 
 .contact-left {
   flex: 1;
-  padding-right: 40px;
+  padding-right: 20px;
 }
 
 .contact-heading {
-  font-size: 72px;
+  font-size: 64px;
   font-weight: 800;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   color: #0a192f;
 }
 
-.contact-email-container {
-  margin-bottom: 24px;
-}
-
 .contact-email {
-  font-size: 32px;
+  font-size: 28px;
   color: var(--standard-color);
   text-decoration: none;
   transition: color 0.3s ease;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .contact-email:hover {
@@ -43,20 +41,20 @@
 }
 
 .contact-description {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   color: #555;
-  max-width: 460px;
-  margin-bottom: 32px;
+  max-width: 400px;
+  margin-bottom: 24px;
 }
 
 .social-links {
   display: flex;
-  gap: 20px;
+  gap: 16px;
 }
 
 .social-icon {
-  font-size: 24px;
+  font-size: 20px;
   color: #555;
   transition: color 0.3s ease;
 }
@@ -66,8 +64,8 @@
 }
 
 .contact-right {
-  flex: 1;
-  height: 600px;
+  flex: 1.2;
+  height: 500px;
 }
 
 .contact-image {
@@ -80,7 +78,7 @@
 @media (max-width: 768px) {
   .contact-content {
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
 
   .contact-left {
@@ -96,6 +94,6 @@
   }
 
   .contact-right {
-    height: 400px;
+    height: 350px;
   }
 }
