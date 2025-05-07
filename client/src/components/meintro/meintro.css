@@ -12,20 +12,22 @@
 .one {
     font-size: 3em;
     margin-top: 100px;
-    color: rgb(18, 17, 17);
+    color: var(--primary);
 }
 
 .intro-text {
     font-size: 5em;
     line-height: 1;
+    color: var(--lightest-slate);
 }
 
 .small-text {
     font-size: 0.6em;
+    color: var(--slate);
 }
 
 .name-underline {
-    border-bottom: 6px solid var(--standard-color);
+    border-bottom: 6px solid var(--primary);
     padding-bottom: 2px;
     display: inline-block;
 }

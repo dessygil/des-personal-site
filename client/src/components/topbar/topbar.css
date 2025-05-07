@@ -1,7 +1,7 @@
 .top {
   width: 100%;
   height: 130px;
-  background-color: rgb(250, 250, 250);
+  background-color: var(--navy);
   top: 0;
   display: flex;
   position: sticky;
