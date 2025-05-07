@@ -1,27 +1,25 @@
+
 import React from "react";
 import "./contactme.css";
+import nicoyaImage from "./nicoya-booth.jpg";
 
 export default function ContactMe() {
   return (
-    <div className="contact-me">
-      <h1 className="contact-me-title">What's Next?</h1>
-      <div className="paragraph-container">
-        <p className="contact-me-paragraph">
-          My inbox is open for any new opportunity. Whether you have a question
-          or just want to say hi, shoot me a message and I'll do my best to get
-          back to you.
-        </p>
-      </div>
-      <div className="button-container">
-        <button className="button-56 button_center_and_margin">
-          <a
-            className="contact-me-email-button global-button"
-            href="mailto: desmondgilmour@gmail.com"
-          >
-            Contact me!
+    <section className="contact-section" id="Contact-anchor">
+      <div className="contact-content">
+        <div className="contact-left">
+          <h2 className="contact-heading">Say hi.</h2>
+          <a href="mailto:desmondgilmour@gmail.com" className="contact-email">
+            hello@desmondgilmour.com
           </a>
-        </button>
+          <p className="contact-description">
+            I'm passionate about transforming complex technical challenges into business results. Always open to new opportunities and interesting conversations.
+          </p>
+        </div>
+        <div className="contact-right">
+          <img src={nicoyaImage} alt="Nicoya Conference Booth" className="contact-image" />
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
