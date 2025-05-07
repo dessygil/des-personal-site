@@ -1,32 +1,21 @@
-:root {
-  --white: #ffffff;
-  --primary: #007bff; /* Example primary color - replace with your chosen hue */
-  --accent: #673ab7; /* Example accent color - replace with your selection */
-  --grey-100: #f8f9fa;
-  --grey-200: #e9ecef;
-  --grey-300: #dee2e6;
-  --grey-400: #ced4da;
-  --grey-500: #adb5bd;
-  --grey-600: #868e96;
-  --grey-700: #495057;
-  --grey-800: #343a40;
-  --grey-900: #212529;
-  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
 
 .card-shell {
-  background: var(--white);
-  border-radius: 8px;
-  padding: 20px;
-  margin: 10px;
-  border: 1px solid var(--grey-200);
-  box-shadow: var(--shadow-md);
-  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  height: 340px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .card-shell:hover {
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .card-title {

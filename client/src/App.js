@@ -23,7 +23,7 @@ function App() {
       <Preloader />
     ) : (
     <>
-    <div className="body">
+    <div className="body" style={{ backgroundColor: 'var(--navy)', color: 'var(--slate)' }}>
       <a href="#main" className="skip-to-content">Skip to main content</a>
       <div>
         < TopBar />
