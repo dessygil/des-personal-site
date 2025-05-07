@@ -2,6 +2,15 @@
   display: flex;
   flex-direction: column;
   counter-reset: homePageCounter;
+  gap: 15vh;
+}
+
+.main-page > section {
+  margin: 0;
+}
+
+.main-page-molecule-opener {
+  margin-bottom: 15vh;
 }
 
 .molecule{
