@@ -12,16 +12,18 @@
 .one {
     font-size: 3em;
     margin-top: 100px;
-    color: rgb(18, 17, 17);
+    color: var(--primary-dark);
 }
 
 .intro-text {
     font-size: 5em;
     line-height: 1;
+    color: var(--grey-900);
 }
 
 .small-text {
     font-size: 0.6em;
+    color: var(--grey-600);
 }
 
 .name-underline {
