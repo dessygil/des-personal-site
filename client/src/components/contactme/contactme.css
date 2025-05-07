@@ -1,5 +1,4 @@
 .contact-section {
-  min-height: 100vh;
   display: flex;
   align-items: flex-end;
   background-color: #0a192f;
@@ -12,7 +11,8 @@
   display: flex;
   width: 100%;
   margin: 0;
-  height: 80vh;
+  height: auto;
+  min-height: 400px;
 }
 
 .contact-left {
@@ -76,16 +76,17 @@
 }
 
 .contact-right {
-  flex: 1.2;
-  height: 100%;
+  flex: 1;
   overflow: hidden;
+  display: flex;
+  align-items: flex-end;
 }
 
 .contact-image {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
-  object-position: left center;
+  object-position: left bottom;
   display: block;
 }
 
