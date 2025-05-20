@@ -19,12 +19,29 @@
 /* Common link styles */
 .link-base {
   text-decoration: none;
-  color: black;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+  position: relative;
 }
 
 .link-base:hover {
   text-decoration: none;
   color: var(--standard-color);
+}
+
+.link-base::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--standard-color);
+  transition: width 0.3s ease;
+}
+
+.link-base:hover::after {
+  width: 100%;
 }
 
 /* Common shadows */
