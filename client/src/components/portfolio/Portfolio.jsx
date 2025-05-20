@@ -21,7 +21,7 @@ export default function Portfolio() {
 
   // Using environment variable from .env.development
   const token = process.env.REACT_APP_GITHUB_TOKEN;
-  
+
   const authLink = setContext((_, { headers }) => {
     if (!token) {
       console.error('GitHub token is missing');
@@ -93,8 +93,8 @@ export default function Portfolio() {
   };
 
   const renderPinnedItems = () => {
-    return pinnedItems.map((node) => (
-      <CardShell key={node.id}>
+    return pinnedItems.map((project) => (
+      <CardShell key={project.id}>
         <div className="card-body">
           <div className="card-head">
             <div className="links-from-github">
