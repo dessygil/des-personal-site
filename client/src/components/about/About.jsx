@@ -21,21 +21,19 @@ export default function About() {
         <div className="left-side">
           <div className="blurb">
             <p className="main-paragraph">
-              As a sales professional with a dual degree in computer science and chemistry
-              (GPA: 3.6), I've honed my skills across various roles, from launching Vintage
-              Academy, a vintage clothing business, to mastering patent-based software sales
-              as a Sales Development Representative at Patsnap and most recently sales development
-              at Nicoya selling a surface plasmon resonance device that leverages the unique
-              advantages of digital microfluidics. I continue to keep my technical skills sharp,
-              by building side project in languages such as Python, JavaScript, C/C++,
-              and Java, and gaining certifications with tools like AWS, Datadog, Kubernetes.
+              I stumbled into sales during the pandemic, knocking on doors in the summer heat to sell pest control. It was tough, but it taught me resilience and the art of connecting with people. Around the same time, I co-founded Vintage Academy, an online vintage clothing store that grew to over $2,000 in monthly recurring revenue. These early experiences sparked my passion for sales and entrepreneurship.
             </p>
             <br></br>
             <p className="main-paragraph">
-              Blending this extensive sales experience with technical acumen, I'm optimally equipped
-              to thrive as a Sales Engineer in a SaaS environment, proficiently bridging the gap
-              between complex technical concepts and client-friendly dialogue. This distinctive
-              blend of skills positions me uniquely in the constantly evolving SaaS landscape.
+              Fast forward to today, I have over four years of sales experience across diverse industries. At I-MED Pharma, I delved into pharmaceutical sales; at PatSnap, I specialized in AI-driven patent software solutions; and currently, at Nicoya Life Sciences, I serve as an Account Executive. In this role, I lead the sales of cutting-edge surface plasmon resonance (SPR) devices, leveraging digital microfluidics to advance early-stage research. My responsibilities have spanned from spearheading sales development initiatives to leading SDR teams and optimizing sales operations, all while integrating AI tools to enhance efficiency and outcomes.
+            </p>
+            <br></br>
+            <p className="main-paragraph">
+              Beyond sales, I'm deeply interested in technology. Holding a dual degree in Chemistry and Computer Science (GPA: 3.6), I've earned certifications in AWS, Datadog, and IBM Quantum Computing. In my spare time, I explore the intersection of AI and drug discovery, constantly seeking ways to bridge complex technical concepts with client-friendly solutions.
+            </p>
+            <br></br>
+            <p className="main-paragraph">
+              I'm on a journey to become a trusted technical advisor and enterprise Account Executive in the SaaS and biotech landscapes, combining my sales expertise with a strong technical foundation to deliver value to clients.
             </p>
             <br></br>
             <p className="main-paragraph">
