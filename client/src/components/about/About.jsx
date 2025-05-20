@@ -10,7 +10,7 @@ export default function About() {
     "Django",
     "RDKit",
     "Datadog/Grafana",
-    "Next.js",
+    "Qiskit",
     "AWS",
   ];
 
