@@ -2,9 +2,9 @@
 import React from 'react';
 import './cardshell.css';
 
-const CardShell = React.memo(({ children }) => {
+const ContentWrapper = React.memo(({ children }) => {
   return (
-    <div className="card-shell">
+    <div className="content-wrapper">
       {children}
     </div>
   );

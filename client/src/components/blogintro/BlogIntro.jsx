@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import CardShell from "../shared/CardShell";
 import "./blogintro.css";
 
-export default function BlogIntro() {
+export default function BlogPreview() {
   const [recentPosts, setRecentPosts] = useState([]);
 
   // This works but only on my hosted website

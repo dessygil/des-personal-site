@@ -20,12 +20,12 @@
     margin-right:  15px;
 }
 
-.main-cards{
+.portfolio-item {
     flex: 0 0 320px;
     margin-bottom: 15px;
 }
 
-.card-head{
+.portfolio-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -76,7 +76,7 @@
 
 .topics :not(:last-child){
     margin-right: 10px;
-    
+
 }
 
 .date-updated{
