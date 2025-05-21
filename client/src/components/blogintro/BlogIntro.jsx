@@ -1,55 +1,46 @@
-import React, { useState, useEffect } from "react";
-import ContentWrapper from "../shared/CardShell";
-import "./blogintro.css";
 
-export default function BlogPreview() {
+import React, { useState, useEffect } from "react";
+import ContentWrapper from "../shared/ContentWrapper";
+import "./blog-posts-preview.css";
+
+const BlogPostsPreview = () => {
   const [recentPosts, setRecentPosts] = useState([]);
 
-  // This works but only on my hosted website
   useEffect(() => {
-    fetch("https://dev.to/api/articles?username=dessygil")
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
+    const fetchPosts = async () => {
+      try {
+        const response = await fetch("https://dev.to/api/articles?username=dessygil");
+        if (!response.ok) {
+          throw new Error("Error connecting to Dev.to API");
         }
-        throw new Error("Error connecting to Dev.to API");
-      })
-      .then((json) => {
-        setRecentPosts(json);
-        console.log(json);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+        const data = await response.json();
+        setRecentPosts(data);
+      } catch (error) {
+        console.error("Failed to fetch blog posts:", error);
+      }
+    };
+
+    fetchPosts();
   }, []);
 
-  
-
-
   const renderBlogPosts = () => {
-    return recentPosts.slice(0, 6).map((node) => (
-      <ContentWrapper key={node.id}>
-        <div className="card-body">
-          <p className="date-posted">Posted: {node.created_at.slice(0, 10)}</p>
-          <a className="a-tag-no-features" href={node.url} key={node.id}>
-            <h5 className="card-title my-card-title card-title">
-              {node.title}
-            </h5>
-            <p className="card-text my-card-text card-description">
-              {node.description}
-            </p>
-            <ul className="topics">
-              {node.topics?.map((topic, index) => (
-                <li key={`${node.id}-topic-${index}`}>{topic}</li>
+    return recentPosts.slice(0, 6).map((post) => (
+      <ContentWrapper key={post.id}>
+        <div className="blog-post-card">
+          <p className="post-date">Posted: {post.created_at.slice(0, 10)}</p>
+          <a className="blog-post-link" href={post.url}>
+            <h5 className="blog-post-title">{post.title}</h5>
+            <p className="blog-post-description">{post.description}</p>
+            <ul className="blog-post-topics">
+              {post.topics?.map((topic, index) => (
+                <li key={`${post.id}-topic-${index}`}>{topic}</li>
               ))}
             </ul>
           </a>
-          <div className="button-container">
-            <button className="button-56">
-              <a className="no-features" href={node.url}>
-                Read more!
-              </a>
-            </button>
+          <div className="action-container">
+            <a href={post.url} className="read-more-button">
+              Read more
+            </a>
           </div>
         </div>
       </ContentWrapper>
@@ -57,11 +48,17 @@ export default function BlogPreview() {
   };
 
   return (
-    <section id="Blog-anchor" className="blog-intro" aria-label="Blog Posts">
-      <h2 className="numbered-heading"><a className="a-tag-no-features" href="https://dev.to/dessygil" aria-label="View Dev.to Profile">Blog Posts</a></h2>
-      <div className="blog-posts" role="feed" aria-label="Recent Blog Posts">
-        {recentPosts.length ? renderBlogPosts() : <p role="status">Loading blog posts...</p>}
+    <section id="blog-section" className="blog-posts-section" aria-label="Blog Posts">
+      <h2 className="section-heading">
+        <a href="https://dev.to/dessygil" className="blog-header-link">
+          Blog Posts
+        </a>
+      </h2>
+      <div className="blog-posts-grid" role="feed" aria-label="Recent Blog Posts">
+        {recentPosts.length ? renderBlogPosts() : <p className="loading-text">Loading blog posts...</p>}
       </div>
     </section>
   );
-}
+};
+
+export default BlogPostsPreview;

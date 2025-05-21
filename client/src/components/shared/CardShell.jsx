@@ -1,6 +1,7 @@
 
 import React from 'react';
-import './cardshell.css';
+import PropTypes from 'prop-types';
+import './content-wrapper.css';
 
 const ContentWrapper = React.memo(({ children }) => {
   return (
@@ -9,6 +10,10 @@ const ContentWrapper = React.memo(({ children }) => {
     </div>
   );
 });
+
+ContentWrapper.propTypes = {
+  children: PropTypes.node.isRequired
+};
 
 ContentWrapper.displayName = 'ContentWrapper';
 
