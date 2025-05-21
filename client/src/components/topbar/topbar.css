@@ -30,11 +30,13 @@
   padding: 10px;
   border-radius: 10%;
   color: black;
-  transition: background-color 1s ease;
+  transition: all 0.3s ease;
+  transform-origin: center;
 }
 
 .site-logo:hover {
   background-color: var(--standard-color-dark);
+  transform: scale(1.05);
 }
 
 .top-right {

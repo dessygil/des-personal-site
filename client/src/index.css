@@ -4,9 +4,9 @@
 
 /* naming the colors I will be using throughout*/
 :root{
-  --standard-color: rgb(134, 172, 243);
-  --standard-color-dark: rgb(59, 96, 165);
-  --main-color: #64ffda; /* Added this line from the changes */
+  --standard-color: rgb(100, 150, 255);
+  --standard-color-dark: rgb(45, 85, 155);
+  --main-color: #64ffda;
 }
 
 /* Improve focus visibility */
