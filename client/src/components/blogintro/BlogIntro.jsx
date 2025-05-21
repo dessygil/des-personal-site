@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import ContentWrapper from "../shared/ContentWrapper";
+import ContentWrapper from "../shared/CardShell";
 import "./blog-posts-preview.css";
 
 const BlogPostsPreview = () => {
