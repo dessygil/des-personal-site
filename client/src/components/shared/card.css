@@ -17,5 +17,6 @@
 }
 
 .shadow:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 12px 20px 0 rgba(0,0,0,0.15);
+  transform: translateY(-2px);
 }
