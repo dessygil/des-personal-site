@@ -66,7 +66,7 @@
   flex: 1;
 }
 
-/* CSS */
+/* Standardized button style */
 .button-56 {
   align-items: center;
   background-color: var(--standard-color);
@@ -89,6 +89,13 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+
+.button-56 a {
+  color: #111;
+  text-decoration: none;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
 }
 
 .button-56:after {

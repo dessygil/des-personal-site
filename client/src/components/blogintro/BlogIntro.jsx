@@ -23,7 +23,7 @@ export default function BlogPreview() {
       });
   }, []);
 
-  
+
 
 
   const renderBlogPosts = () => {

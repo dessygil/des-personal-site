@@ -11,11 +11,11 @@ export default function HeroSection() {
   );
 
   const four = (
-    <button className="button-56 four-button" role="button">
-      <a className="four" href="mailto: desmondgilmour@gmail.com">
+    <button className="button-56" role="button">
+      <a href="mailto: desmondgilmour@gmail.com">
         Contact me!
       </a>
-    </button>
+</button>
   );
 
   const items = [one, two, three, four];
