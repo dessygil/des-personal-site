@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CardShell from "../shared/CardShell";
+import ContentWrapper from "../shared/ContentWrapper";
 import {
   ApolloClient,
   InMemoryCache,
@@ -94,7 +94,7 @@ export default function Portfolio() {
 
   const renderPinnedItems = () => {
     return pinnedItems.map((node) => (
-      <CardShell key={node.id}>
+      <ContentWrapper key={node.id}>
         <div className="card-body">
           <div className="card-head">
             <div className="links-from-github">
@@ -117,7 +117,7 @@ export default function Portfolio() {
           </p>
           <ul className="topics topics-container">{renderRepoTopics(node)}</ul>
         </div>
-      </CardShell>
+      </ContentWrapper>
     ));
   };
 
