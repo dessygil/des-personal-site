@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CardShell from "../shared/CardShell";
+import ContentWrapper from "../shared/CardShell";
 import "./blogintro.css";
 
 export default function BlogPreview() {
@@ -28,7 +28,7 @@ export default function BlogPreview() {
 
   const renderBlogPosts = () => {
     return recentPosts.slice(0, 6).map((node) => (
-      <CardShell key={node.id}>
+      <ContentWrapper key={node.id}>
         <div className="card-body">
           <p className="date-posted">Posted: {node.created_at.slice(0, 10)}</p>
           <a className="a-tag-no-features" href={node.url} key={node.id}>
@@ -52,7 +52,7 @@ export default function BlogPreview() {
             </button>
           </div>
         </div>
-      </CardShell>
+      </ContentWrapper>
     ));
   };
 

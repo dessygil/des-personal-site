@@ -10,4 +10,6 @@ const ContentWrapper = React.memo(({ children }) => {
   );
 });
 
-export default CardShell;
+ContentWrapper.displayName = 'ContentWrapper';
+
+export default ContentWrapper;

@@ -1,4 +1,3 @@
-
 .content-wrapper {
   background-color: #fff;
   border-radius: 0.5rem;
@@ -14,7 +13,7 @@
   overflow: hidden;
 }
 
-.card-shell:hover {
+.content-wrapper:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
