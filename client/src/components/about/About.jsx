@@ -56,7 +56,6 @@ export default function About() {
               className="headshot"
               src={headshot}
               alt="Desmond's Professional Headshot"
-              loading="lazy"
             />
           </div>
         </div>

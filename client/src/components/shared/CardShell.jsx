@@ -2,12 +2,10 @@
 import React from 'react';
 import './cardshell.css';
 
-const CardShell = React.memo(({ children }) => {
+export default function CardShell({ children }) {
   return (
     <div className="card-shell">
       {children}
     </div>
   );
-});
-
-export default CardShell;
+}
