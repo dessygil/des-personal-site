@@ -1,19 +1,11 @@
 
 import React from 'react';
-import PropTypes from 'prop-types';
-import './project-card.css';
+import './card.css';
 
-const ProjectCard = ({ children, className }) => {
+export default function ProjectCard({ children, className }) {
   return (
-    <div className={`project-card shadow ${className || ''}`}>
+    <div className={`card main-cards shadow ${className || ''}`} style={{ width: "18rem" }}>
       {children}
     </div>
   );
-};
-
-ProjectCard.propTypes = {
-  children: PropTypes.node.isRequired,
-  className: PropTypes.string
-};
-
-export default ProjectCard;
+}

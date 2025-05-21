@@ -1,76 +1,72 @@
-
-.blog-posts-section {
-  padding: 2rem 0;
+.blog-intro {
+  margin: 0;
 }
 
-.section-heading {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.blog-header-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.blog-posts-grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.blog-post-card {
-  padding: 1rem;
-}
-
-.post-date {
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-
-.blog-post-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.blog-post-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.blog-post-description {
-  color: #444;
-  margin-bottom: 1rem;
-}
-
-.blog-post-topics {
-  list-style: none;
-  padding: 0;
+.blog-posts {
   display: flex;
-  gap: 0.5rem;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
+  gap: 15px;
 }
 
-.blog-post-topics li {
-  background: #f0f0f0;
-  padding: 0.25rem 0.75rem;
-  border-radius: 1rem;
-  font-size: 0.875rem;
+.main-cards {
+  flex: 0 0 320px;
+  margin-bottom: 15px;
 }
 
-.read-more-button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 0.25rem;
-  transition: background 0.2s;
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  padding: 15px;
 }
 
-.read-more-button:hover {
-  background: #0056b3;
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 5px;
+}
+
+.text-truncate {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.my-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  composes: text-truncate;
+}
+
+.my-card-text {
+  composes: text-truncate;
+  color: rgb(0, 0, 0);
+}
+
+.topics {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  font-size: 14px;
+  color: rgb(107, 107, 107);
+}
+
+.date-posted {
+  margin: 0 0 0.5rem;
+  color: #999;
+  font-size: 0.75rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.blog-subheader:hover{
+    color: var(--standard-color);
 }
