@@ -1,53 +1,4 @@
 .meIntro-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 120px 20px;
-}
-
-.one {
-  color: var(--main-color);
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-.intro-text {
-  font-size: 80px;
-  line-height: 1.1;
-  margin-bottom: 30px;
-}
-
-.name-underline {
-  position: relative;
-  display: inline-block;
-}
-
-.name-underline::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--main-color);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-}
-
-.name-underline:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-.three {
-  max-width: 540px;
-  font-size: 20px;
-  line-height: 1.6;
-  margin-bottom: 50px;
-}
-
-.meIntro-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -71,6 +22,12 @@
 
 .small-text {
     font-size: 0.6em;
+}
+
+.name-underline {
+    border-bottom: 6px solid var(--standard-color);
+    padding-bottom: 2px;
+    display: inline-block;
 }
 
 .three {
