@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, lazy, Suspense} from 'react';
+const Molecule = lazy(() => import('./components/molecule/Molecule'));
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import TopBar from "./components/topbar/TopBar";
