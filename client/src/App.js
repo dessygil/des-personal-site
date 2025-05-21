@@ -1,15 +1,14 @@
 import React, {useState, lazy, Suspense} from 'react';
-const Molecule = lazy(() => import('./components/molecule/Molecule'));
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import TopBar from "./components/topbar/TopBar";
 import SideBarSocials from "./components/sidebarsocials/SideBarSocials";
 import Footer from "./components/footer/Footer";
 import Home from './pages/home/Home';
-import NotFound from './pages/notfound/NotFound'
+import NotFound from './pages/notfound/NotFound';
 import Preloader from './components/preloader/Preloader';
-
 import "./index.css";
+
+const Molecule = lazy(() => import('./components/molecule/Molecule'));
 
 function App() {
   const [loading, setLoading] = useState(false);
