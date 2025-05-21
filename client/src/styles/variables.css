@@ -1,0 +1,17 @@
+
+:root {
+  /* Colors */
+  --standard-color: rgb(100, 150, 255);
+  --standard-color-dark: rgb(45, 85, 155);
+  --main-color: #64ffda;
+  
+  /* Breakpoints */
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1024px;
+  
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+}

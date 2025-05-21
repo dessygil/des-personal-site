@@ -1,6 +1,5 @@
 import React from "react";
-
-import "./meintro.css";
+import "./hero-section.css";
 
 export default function HeroSection() {
   const one = <h3 className="one">Hi, my name is </h3>;
@@ -29,5 +28,3 @@ export default function HeroSection() {
       </div>
   );
 }
-
-//As a Research Software Engineer, I fuse my dual degrees in Computer Science and Chemistry to deliver full-stack development with Django, Next.js/React, MySQL, and PostgreSQL. I've harnessed this knowledge to predict PADI-4 enzyme's bioactivity with AI and am developing a lab scheduling system. I also contribute to open-source cheminformatics projects like datamol, RDKit, and Molfeat.

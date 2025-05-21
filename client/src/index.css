@@ -2,11 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* naming the colors I will be using throughout*/
-:root{
-  --standard-color: rgb(100, 150, 255);
-  --standard-color-dark: rgb(45, 85, 155);
-  --main-color: #64ffda;
+@import './styles/variables.css';
+@import './styles/shared.css';
+
+/* Responsive utilities */
+@media (max-width: 480px) {
+  .full-page-structure {
+    flex-direction: column;
+  }
+  
+  .right-side-div,
+  .left-side-div {
+    display: none;
+  }
+
+  .center-div {
+    flex: 1;
+    padding: var(--spacing-md);
+  }
 }
 
 /* Improve focus visibility */

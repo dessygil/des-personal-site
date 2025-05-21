@@ -1,7 +1,7 @@
 import React from "react";
-import "./sidebarsocials.css";
+import "./social-links.css";
 
-export default function SocialSidebar() {
+export default function SocialLinks() {
   return (
     <div className="side-bar-socials">
       <div>
