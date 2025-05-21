@@ -1,0 +1,57 @@
+
+.meIntro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Roboto", sans-serif;
+}
+
+.meIntro-container > * {
+    margin:10px 0 10px 0;
+}
+
+.one {
+    font-size: 3em;
+    margin-top: 100px;
+    color: rgb(18, 17, 17);
+}
+
+.intro-text {
+    font-size: 5em;
+    line-height: 1;
+}
+
+.small-text {
+    font-size: 0.6em;
+}
+
+.name-underline {
+    border-bottom: 6px solid var(--standard-color);
+    padding-bottom: 2px;
+    display: inline-block;
+}
+
+.three {
+    color: rgb(56, 54, 54);
+    max-width: 540px;
+    margin-top: 30px;
+}
+
+.four-button{
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.four {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+}
+
+.four:hover {
+    background-color: rgba(59, 96, 165, 0.6);
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
