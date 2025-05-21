@@ -3,18 +3,13 @@
   border-radius: 0.5rem;
   padding: 1rem;
   margin-bottom: 1rem;
-  height: 340px;
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  overflow: hidden;
 }
 
 .content-wrapper:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
 .card-title {
