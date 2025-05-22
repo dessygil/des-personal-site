@@ -81,9 +81,11 @@
   .company-name {
     font-size: 16px !important;
     word-break: break-word;
-    line-height: 1.3;
+    line-height: 1.5;
     padding-right: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    max-width: 90%;
   }
 
   .company-link {
