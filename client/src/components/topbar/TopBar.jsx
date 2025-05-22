@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import {
   ApolloClient,
@@ -81,7 +80,12 @@ export default function TopBar() {
       <a className="home-page-logo-link" href="/" aria-label="Home">
         <h2 className="site-logo">DG</h2>
       </a>
-      <button className="hamburger-menu" onClick={toggleMenu} aria-label="Toggle menu">
+      <button 
+        className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`} 
+        onClick={toggleMenu} 
+        aria-label="Toggle menu"
+        aria-expanded={isMenuOpen}
+      >
         <span></span>
         <span></span>
         <span></span>
