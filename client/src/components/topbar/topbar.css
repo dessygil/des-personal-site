@@ -10,6 +10,14 @@
   z-index: 10;
 }
 
+@media (max-width: 768px) {
+  .top {
+    height: auto;
+    padding: 1rem;
+    flex-direction: column;
+  }
+}
+
 .topLeft {
   flex: 4;
 }
