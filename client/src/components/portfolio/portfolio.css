@@ -14,15 +14,26 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.repos :not(:last-child){
-    margin-right:  15px;
+    justify-content: center;
+    gap: 15px;
 }
 
 .portfolio-item {
     flex: 0 0 320px;
     margin-bottom: 15px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .portfolio-header {
+        font-size: 2rem;
+        padding: 10px;
+    }
 }
 
 .portfolio-header {
