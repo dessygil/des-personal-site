@@ -76,3 +76,31 @@
 .box-content {
   min-height: 400px;
 }
+
+@media (max-width: 768px) {
+  .company-name {
+    font-size: 18px !important;
+    word-break: break-word;
+    line-height: 1.3;
+  }
+
+  .title {
+    font-size: 16px !important;
+    margin-top: 10px !important;
+  }
+
+  .date {
+    font-size: 13px;
+  }
+
+  .duties {
+    font-size: 14px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+  }
+
+  .position-container {
+    margin-bottom: 25px;
+    padding-right: 10px;
+  }
+}
