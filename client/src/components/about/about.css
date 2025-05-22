@@ -65,3 +65,44 @@
   display: block;
   max-width: 300px;
 }
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30vh;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    margin-top: 15vh;
+    padding: 0 20px;
+  }
+}
+
+.about-me-text {
+  flex: 2;
+  padding-right: 50px;
+}
+
+@media (max-width: 768px) {
+  .about-me-text {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.about-me-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .about-me-image img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
