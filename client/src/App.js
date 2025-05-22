@@ -1,4 +1,4 @@
-import React, {useState, lazy, Suspense} from 'react';
+import React, {useState, useEffect, lazy, Suspense} from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TopBar from "./components/topbar/TopBar";
 import SideBarSocials from "./components/sidebarsocials/SideBarSocials";
@@ -13,7 +13,7 @@ const Molecule = lazy(() => import('./components/molecule/Molecule'));
 function App() {
   const [loading, setLoading] = useState(false);
 
-  React.useEffect(() =>{
+  useEffect(() => {
     setTimeout(() => setLoading(true), 3000);
   })
 
