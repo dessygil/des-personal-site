@@ -6,11 +6,29 @@
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  justify-content: center;
 }
 
 .main-cards {
   flex: 0 0 320px;
   margin-bottom: 15px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main-cards {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .blog-intro {
+    padding: 0 20px;
+  }
+
+  .card-head {
+    font-size: 2rem;
+    padding: 10px;
+  }
 }
 
 .card-head {
