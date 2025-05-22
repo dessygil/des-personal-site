@@ -16,9 +16,22 @@
     color: rgb(18, 17, 17);
 }
 
+@media (max-width: 768px) {
+    .one {
+        font-size: 2em;
+        margin-top: 60px;
+    }
+}
+
 .intro-text {
     font-size: 5em;
     line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .intro-text {
+        font-size: 3em;
+    }
 }
 
 .small-text {
