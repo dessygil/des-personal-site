@@ -165,11 +165,13 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .top-list-items-resume .button-56 {
     margin: 0;
     width: auto;
+    padding: 12px 40px;
   }
 }
 
