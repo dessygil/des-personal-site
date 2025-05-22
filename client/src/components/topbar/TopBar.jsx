@@ -21,7 +21,7 @@ export default function TopBar() {
   });
 
   const token = process.env.REACT_APP_GITHUB_TOKEN;
-  
+
   const authLink = setContext((_, { headers }) => {
     if (!token) {
       console.error('GitHub token is missing');
@@ -71,10 +71,10 @@ export default function TopBar() {
         setDownloadableResume(response.data.repository.releases.edges[0].node.releaseAssets.edges[0].node.downloadUrl);
       });
   }, []);
-  
+
   return (
-    <div className="top box-shadow">
-      <a className="home-page-logo-link " href="/">
+    <nav className="top box-shadow" role="navigation" aria-label="Main navigation">
+      <a className="home-page-logo-link " href="/" aria-label="Home">
         <h2 className="site-logo">DG</h2>
       </a>
       <div className="top-right">
@@ -113,6 +113,6 @@ export default function TopBar() {
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 }
