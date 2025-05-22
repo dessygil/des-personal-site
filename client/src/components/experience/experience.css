@@ -1,31 +1,7 @@
+
 .experience {
   margin-top: 30vh;
-  padding: 0 20px;
-}
-
-.numbered-heading {
-  font-size: 3rem;
-  margin-bottom: 50px;
-}
-
-@media (max-width: 768px) {
-  .experience {
-    margin-top: 15vh;
-  }
-
-  .numbered-heading {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-
-  .MuiBox-root {
-    flex-direction: column !important;
-  }
-
-  .MuiTabs-root {
-    min-height: auto !important;
-    margin-bottom: 20px;
-  }
+  margin-bottom: 30vh;
 }
 
 .company-name {
