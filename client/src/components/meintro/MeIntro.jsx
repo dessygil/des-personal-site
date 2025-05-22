@@ -21,10 +21,12 @@ export default function HeroSection() {
   const items = [one, two, three, four];
 
   return (
-      <div className="meIntro-container">
-        {items.map((item, i) => (
-          <div key={i}>{item}</div>
-        ))}
+      <div className="meIntro-container" role="main" aria-label="Introduction">
+        <div aria-live="polite">
+          {items.map((item, i) => (
+            <div key={i}>{item}</div>
+          ))}
+        </div>
       </div>
   );
 }

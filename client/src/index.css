@@ -24,8 +24,21 @@
 
 /* Improve focus visibility */
 *:focus {
-  outline: 2px solid var(--main-color);
-  outline-offset: 2px;
+  outline: 3px solid var(--main-color);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+*:focus-visible {
+  outline: 3px solid var(--main-color);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
 /* Skip to main content - accessibility feature */

@@ -6,7 +6,9 @@ export default function SocialLinks() {
     <div className="side-bar-socials">
       <div>
         <a href="mailto: desmondgilmour@gmail.com"
-          aria-label={`Visit my email profile`}
+          aria-label="Send me an email"
+          className="social-link"
+          title="Email"
         >
           <i className="social-icon fa-solid fa-envelope" aria-hidden="true"></i>
         </a>

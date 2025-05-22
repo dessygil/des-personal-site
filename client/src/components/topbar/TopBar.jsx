@@ -78,29 +78,29 @@ export default function TopBar() {
         <h2 className="site-logo">DG</h2>
       </a>
       <div className="top-right">
-        <ul className="top-list">
-          <li className="top-list-items">
-            <a className="top-list-item-tag" href="#About-anchor">
+        <ul className="top-list" role="menubar">
+          <li className="top-list-items" role="none">
+            <a className="top-list-item-tag" href="#About-anchor" role="menuitem" aria-label="About section">
               01. About
             </a>
           </li>
-          <li className="top-list-items">
-            <a className="top-list-item-tag" href="#Experience-anchor">
+          <li className="top-list-items" role="none">
+            <a className="top-list-item-tag" href="#Experience-anchor" role="menuitem" aria-label="Experience section">
               02. Experience
             </a>
           </li>
-          <li className="top-list-items">
-            <a className="top-list-item-tag" href="#Portfolio-anchor">
+          <li className="top-list-items" role="none">
+            <a className="top-list-item-tag" href="#Portfolio-anchor" role="menuitem" aria-label="Portfolio section">
               03. Portfolio
             </a>
           </li>
-          <li className="top-list-items">
-            <a className="top-list-item-tag" href="#Blog-anchor">
+          <li className="top-list-items" role="none">
+            <a className="top-list-item-tag" href="#Blog-anchor" role="menuitem" aria-label="Blog section">
               04. Blog
             </a>
           </li>
-          <li className="top-list-items-resume">
-            <button className="button-56" role="button">
+          <li className="top-list-items-resume" role="none">
+            <button className="button-56" aria-label="Download Resume">
               <a
                 className="no-features"
                 href={downloadableResume}
