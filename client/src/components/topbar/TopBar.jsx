@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import {
   ApolloClient,
@@ -6,13 +7,12 @@ import {
   gql,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
-
 import "./topbar.css";
 import resume from "./DesmondGilmourResume.pdf";
 
 export default function TopBar() {
-
   const [downloadableResume, setDownloadableResume] = useState();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const baseUrl = "https://api.github.com/graphql";
 
@@ -42,7 +42,7 @@ export default function TopBar() {
 
   useEffect(() => {
     client.query({
-        query: gql`
+      query: gql`
         {
           viewer {
             login
@@ -65,37 +65,46 @@ export default function TopBar() {
             }
           }
         }
-        `,
-      })
-      .then((response) => {
-        setDownloadableResume(response.data.repository.releases.edges[0].node.releaseAssets.edges[0].node.downloadUrl);
-      });
+      `,
+    })
+    .then((response) => {
+      setDownloadableResume(response.data.repository.releases.edges[0].node.releaseAssets.edges[0].node.downloadUrl);
+    });
   }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <nav className="top box-shadow" role="navigation" aria-label="Main navigation">
-      <a className="home-page-logo-link " href="/" aria-label="Home">
+      <a className="home-page-logo-link" href="/" aria-label="Home">
         <h2 className="site-logo">DG</h2>
       </a>
-      <div className="top-right">
+      <button className="hamburger-menu" onClick={toggleMenu} aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div className={`top-right ${isMenuOpen ? 'menu-open' : ''}`}>
         <ul className="top-list" role="menubar">
           <li className="top-list-items" role="none">
-            <a className="top-list-item-tag" href="#About-anchor" role="menuitem" aria-label="About section">
+            <a className="top-list-item-tag" href="#About-anchor" role="menuitem" aria-label="About section" onClick={toggleMenu}>
               01. About
             </a>
           </li>
           <li className="top-list-items" role="none">
-            <a className="top-list-item-tag" href="#Experience-anchor" role="menuitem" aria-label="Experience section">
+            <a className="top-list-item-tag" href="#Experience-anchor" role="menuitem" aria-label="Experience section" onClick={toggleMenu}>
               02. Experience
             </a>
           </li>
           <li className="top-list-items" role="none">
-            <a className="top-list-item-tag" href="#Portfolio-anchor" role="menuitem" aria-label="Portfolio section">
+            <a className="top-list-item-tag" href="#Portfolio-anchor" role="menuitem" aria-label="Portfolio section" onClick={toggleMenu}>
               03. Portfolio
             </a>
           </li>
           <li className="top-list-items" role="none">
-            <a className="top-list-item-tag" href="#Blog-anchor" role="menuitem" aria-label="Blog section">
+            <a className="top-list-item-tag" href="#Blog-anchor" role="menuitem" aria-label="Blog section" onClick={toggleMenu}>
               04. Blog
             </a>
           </li>
