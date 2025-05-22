@@ -160,9 +160,16 @@
 
 @media (max-width: 768px) {
   .top-list-items-resume {
-    margin: 15px 0;
+    margin: 20px 0;
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .top-list-items-resume .button-56 {
+    margin: 0;
+    width: auto;
   }
 }
 
