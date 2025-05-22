@@ -67,6 +67,28 @@
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .top-list-items {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+}
+
+.top-list-items-resume {
+  margin-right: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+  .top-list-items-resume {
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .top-list-item-tag{
   text-decoration: none;
   color: black;
